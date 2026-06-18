@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7A9E7E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Menú Semanal">
+  <meta name="description" content="Planificador semanal de comidas para Alba y Sergi">
+  <title>Menú Semanal</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ── Screens ─────────────────────────────────────────── -->
+  <div id="screen-today"   class="screen active"></div>
+  <div id="screen-week"    class="screen"></div>
+  <div id="screen-shopping" class="screen"></div>
+  <div id="screen-prep"    class="screen"></div>
+  <div id="screen-freezer" class="screen"></div>
+  <div id="screen-water"   class="screen"></div>
+  <div id="screen-favorites" class="screen"></div>
+
+  <!-- ── Bottom nav ─────────────────────────────────────── -->
+  <nav id="bottom-nav" role="navigation" aria-label="Navegación principal">
+
+    <button class="nav-item active" data-screen="today" onclick="navigate('today')" aria-label="Hoy">
+      <span class="nav-icon">☀️</span>
+      <span>Hoy</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="week" onclick="navigate('week')" aria-label="Semana">
+      <span class="nav-icon">📅</span>
+      <span>Semana</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="shopping" onclick="navigate('shopping')" aria-label="Lista de compra">
+      <span class="nav-icon">🛒</span>
+      <span>Compra</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="prep" onclick="navigate('prep')" aria-label="Preparación dominical">
+      <span class="nav-icon">📋</span>
+      <span>Preparo</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="freezer" onclick="navigate('freezer')" aria-label="Congelador">
+      <span class="nav-icon">❄️</span>
+      <span>Frízer</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="water" onclick="navigate('water')" aria-label="Agua">
+      <span class="nav-icon">💧</span>
+      <span>Agua</span>
+      <div class="nav-dot"></div>
+    </button>
+
+    <button class="nav-item" data-screen="favorites" onclick="navigate('favorites')" aria-label="Favoritos">
+      <span class="nav-icon">⭐</span>
+      <span>Favoritos</span>
+      <div class="nav-dot"></div>
+    </button>
+
+  </nav>
+
+</div>
+
+<!-- ── Recipe bottom sheet ──────────────────────────────── -->
+<div id="sheet-backdrop" class="sheet-backdrop" role="dialog" aria-modal="true" aria-label="Receta">
+  <div id="sheet" class="sheet"></div>
+</div>
+
+<!-- ── Toast ────────────────────────────────────────────── -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- ── Scripts ──────────────────────────────────────────── -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
