@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6B9B6F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mesa">
+  <meta name="description" content="Planificador quincenal de comidas para Alba y Sergi">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Mesa · Alba y Sergi</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app" role="application">
+
+  <!-- ══ SCREENS ══════════════════════════════════════════════ -->
+
+  <main id="screen-hoy"        class="screen active"  role="main"         aria-label="Hoy"></main>
+  <main id="screen-menu"       class="screen"         role="main"         aria-label="Menú semanal"></main>
+  <main id="screen-compra"     class="screen"         role="main"         aria-label="Lista de compra"></main>
+  <main id="screen-recetas"    class="screen"         role="main"         aria-label="Recetas"></main>
+  <main id="screen-prepara"    class="screen"         role="main"         aria-label="Preparación"></main>
+  <main id="screen-congelador" class="screen"         role="main"         aria-label="Congelador"></main>
+  <main id="screen-favoritos"  class="screen"         role="main"         aria-label="Favoritos"></main>
+  <main id="screen-hogar"      class="screen"         role="main"         aria-label="Hogar"></main>
+
+  <!-- ══ BOTTOM NAV ═══════════════════════════════════════════ -->
+  <nav id="bottom-nav" role="navigation" aria-label="Navegación principal">
+
+    <button class="nav-btn active" data-screen="hoy"
+            onclick="navigate('hoy')" aria-label="Hoy">
+      <span class="nav-icon" aria-hidden="true">☀️</span>
+      <span class="nav-label">Hoy</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="menu"
+            onclick="navigate('menu')" aria-label="Menú quincenal">
+      <span class="nav-icon" aria-hidden="true">📅</span>
+      <span class="nav-label">Menú</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="compra"
+            onclick="navigate('compra')" aria-label="Lista de compra">
+      <span class="nav-icon" aria-hidden="true">🛒</span>
+      <span class="nav-label">Compra</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="recetas"
+            onclick="navigate('recetas')" aria-label="Recetas">
+      <span class="nav-icon" aria-hidden="true">📖</span>
+      <span class="nav-label">Recetas</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="prepara"
+            onclick="navigate('prepara')" aria-label="Preparación dominical">
+      <span class="nav-icon" aria-hidden="true">📋</span>
+      <span class="nav-label">Prepara</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="congelador"
+            onclick="navigate('congelador')" aria-label="Congelador">
+      <span class="nav-icon" aria-hidden="true">❄️</span>
+      <span class="nav-label">Frízer</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="favoritos"
+            onclick="navigate('favoritos')" aria-label="Favoritos">
+      <span class="nav-icon" aria-hidden="true">⭐</span>
+      <span class="nav-label">Favoritos</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+    <button class="nav-btn" data-screen="hogar"
+            onclick="navigate('hogar')" aria-label="Hogar y agua">
+      <span class="nav-icon" aria-hidden="true">🏠</span>
+      <span class="nav-label">Hogar</span>
+      <div class="nav-dot" aria-hidden="true"></div>
+    </button>
+
+  </nav>
+
+</div>
+
+<!-- ══ RECIPE SHEET ══════════════════════════════════════════ -->
+<div id="sheet-backdrop" class="sheet-backdrop"
+     role="dialog" aria-modal="true" aria-label="Receta">
+  <div id="sheet" class="sheet"></div>
+</div>
+
+<!-- ══ TOAST ═════════════════════════════════════════════════ -->
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ══ SCRIPTS ═══════════════════════════════════════════════ -->
+<script src="app.js"></script>
+
+</body>
+</html>

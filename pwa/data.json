@@ -1,0 +1,892 @@
+{
+  "app": {
+    "nombre": "Mesa",
+    "subtitulo": "de Alba y Sergi",
+    "periodo": "23 jun – 6 jul 2025",
+    "actualizado": "2025-06-21",
+    "proxima_actualizacion": "2025-07-05"
+  },
+  "agua": {
+    "consumo_diario_litros": 5,
+    "consumo_quincenal_litros": 70,
+    "garrafas_5l_necesarias": 14,
+    "garrafas_semana": 7
+  },
+  "semanas": [
+    {
+      "id": "s1",
+      "label": "Semana 1",
+      "rango": "23–29 jun",
+      "dias": [
+        {
+          "id": "s1d1", "fecha": "2025-06-23", "dia": "Lunes", "dia_corto": "Lun",
+          "comida": {
+            "nombre": "Lentejas estofadas con zanahoria y pimiento",
+            "tipo": "legumbres", "airfryer": false, "tiempo": 35,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🌱", "color": "legumbres",
+            "descripcion": "Guiso de lentejas pardinas con sofrito de pimiento, zanahoria y comino. Reconfortante y llena mucho.",
+            "ingredientes": [
+              "250 g lentejas pardinas (bote)", "1 zanahoria grande", "1 pimiento rojo",
+              "1 cebolla mediana", "3 dientes de ajo", "1 tomate maduro rallado",
+              "1 cucharadita pimentón dulce", "1/2 cucharadita comino molido",
+              "500 ml caldo de verduras", "aceite de oliva", "sal y pimienta"
+            ],
+            "pasos": [
+              "Sofreír cebolla, ajo y pimiento en aceite a fuego medio, 8 min.",
+              "Añadir tomate rallado y pimentón. Cocinar 3 min más.",
+              "Incorporar lentejas escurridas, zanahoria en rodajas y caldo.",
+              "Cocinar 20 min a fuego medio. Añadir comino, ajustar sal.",
+              "Reposar 5 min antes de servir."
+            ],
+            "tags": ["batch_cooking", "adelantable"],
+            "imagen": "bg_leg"
+          },
+          "cena": {
+            "nombre": "Pechuga al limón en airfryer con ensalada verde",
+            "tipo": "carne", "airfryer": true, "tiempo": 20,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥩", "color": "carne",
+            "descripcion": "Pechuga marinada en limón y hierbas, crujiente por fuera y jugosa por dentro.",
+            "ingredientes": [
+              "2 pechugas de pollo (180 g c/u)", "1 limón (zumo y ralladura)",
+              "1 cucharadita ajo en polvo", "orégano seco", "aceite de oliva",
+              "1 bolsa lechuga mezclum", "150 g tomate cherry", "pepino 1/2", "sal"
+            ],
+            "pasos": [
+              "Marinar pollo con limón, ajo, orégano y aceite, 10 min.",
+              "Airfryer 200°C, 12 min girando a mitad.",
+              "Preparar ensalada. Laminar el pollo y servir encima."
+            ],
+            "tags": ["airfryer", "rapida"],
+            "imagen": "bg_meat"
+          }
+        },
+        {
+          "id": "s1d2", "fecha": "2025-06-24", "dia": "Martes", "dia_corto": "Mar",
+          "comida": {
+            "nombre": "Merluza al horno con patatas panaderas",
+            "tipo": "pescado", "airfryer": false, "tiempo": 40,
+            "favorito": true, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "Lomos de merluza sobre cama de patatas y pimientos asados. Clásico mediterráneo de domingo entre semana.",
+            "ingredientes": [
+              "2 lomos de merluza (~350 g)", "2 patatas medianas en rodajas",
+              "1 pimiento rojo", "1 pimiento verde", "1 cebolla en juliana",
+              "aceite de oliva virgen extra", "pimentón dulce", "ajo en polvo",
+              "perejil fresco", "sal y pimienta", "1/2 limón"
+            ],
+            "pasos": [
+              "Horno 200°C. Patatas, cebolla y pimientos con aceite y sal, 20 min.",
+              "Colocar merluza sobre las verduras. Aliñar con aceite y pimentón.",
+              "Hornear 13–15 min más hasta que la merluza esté opaca.",
+              "Servir con perejil picado y limón."
+            ],
+            "tags": ["temporada"],
+            "imagen": "bg_fish"
+          },
+          "cena": {
+            "nombre": "Pan con tomate, jamón serrano y aceite",
+            "tipo": "carne", "airfryer": false, "tiempo": 5,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥖", "color": "facil",
+            "descripcion": "La cena más honesta de la cocina española. Pan bien frotado con tomate maduro.",
+            "ingredientes": [
+              "1 barra de pan de cristal", "2 tomates maduros grandes",
+              "150 g jamón serrano", "aceite de oliva virgen extra", "sal en escamas"
+            ],
+            "pasos": [
+              "Tostar el pan si se desea.",
+              "Frotar con el tomate partido por la mitad.",
+              "Añadir aceite generoso, sal en escamas y jamón."
+            ],
+            "tags": ["sin_cocinar", "cena_facil"],
+            "imagen": "bg_meat"
+          }
+        },
+        {
+          "id": "s1d3", "fecha": "2025-06-25", "dia": "Miércoles", "dia_corto": "Mié",
+          "comida": {
+            "nombre": "Pasta con tomate fresco, calabacín y mozzarella",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 25,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🥬", "color": "veg",
+            "descripcion": "Pasta de verano con calabacín salteado y tomate fresco. La mozzarella se funde en el último momento.",
+            "ingredientes": [
+              "200 g pasta rigatoni o penne", "1 calabacín mediano", "2 tomates maduros grandes",
+              "1 bola mozzarella fresca (125 g)", "3 dientes de ajo", "albahaca fresca",
+              "aceite de oliva", "sal", "pimienta negra", "pizca de azúcar"
+            ],
+            "pasos": [
+              "Saltear ajo y calabacín en cubos, 5 min.",
+              "Añadir tomate troceado, pizca de azúcar y sal. Cocinar 12 min.",
+              "Cocer pasta al dente. Escurrir reservando 1 vaso de agua.",
+              "Mezclar pasta con la salsa. Añadir mozzarella troceada y albahaca."
+            ],
+            "tags": ["temporada", "vegetariano"],
+            "imagen": "bg_veg"
+          },
+          "cena": {
+            "nombre": "Tortilla española de patata con cebolla",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 25,
+            "favorito": true, "favorito_potencial": true,
+            "emoji_tipo": "🥚", "color": "veg",
+            "descripcion": "La tortilla que lo resuelve todo. Jugosa por dentro, dorada por fuera.",
+            "ingredientes": [
+              "4 huevos grandes", "3 patatas medianas",
+              "1 cebolla mediana", "aceite de oliva abundante", "sal"
+            ],
+            "pasos": [
+              "Pelar y laminar fino patatas y cebolla.",
+              "Freír a fuego medio-bajo en abundante aceite 18 min hasta tiernas.",
+              "Escurrir bien. Batir huevos con sal. Mezclar con patatas.",
+              "Cuajar en sartén anti-adherente por ambos lados."
+            ],
+            "tags": ["cena_facil", "batch_cooking"],
+            "imagen": "bg_veg"
+          }
+        },
+        {
+          "id": "s1d4", "fecha": "2025-06-26", "dia": "Jueves", "dia_corto": "Jue",
+          "comida": {
+            "nombre": "Garbanzos con espinacas, ajo y huevo pochado",
+            "tipo": "legumbres", "airfryer": false, "tiempo": 20,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🌱", "color": "legumbres",
+            "descripcion": "Plato completo en 20 minutos. Los garbanzos absorben el sofrito de ajo y pimentón ahumado.",
+            "ingredientes": [
+              "1 bote garbanzos cocidos (400 g)", "150 g espinacas frescas",
+              "2 huevos", "3 dientes de ajo", "1 tomate maduro rallado",
+              "1 cucharadita pimentón ahumado", "comino", "aceite de oliva",
+              "1 cucharada vinagre (para pochar)", "sal"
+            ],
+            "pasos": [
+              "Sofreír ajo laminado. Añadir tomate y pimentón, 4 min.",
+              "Incorporar garbanzos y espinacas. Remover hasta que reduzcan.",
+              "Pochar huevos en agua con sal y vinagre, 3–4 min.",
+              "Servir garbanzos con el huevo encima y un hilo de aceite."
+            ],
+            "tags": ["vegetariano", "legumbres"],
+            "imagen": "bg_leg"
+          },
+          "cena": {
+            "nombre": "Salmón en airfryer con brócoli asado y limón",
+            "tipo": "pescado", "airfryer": true, "tiempo": 20,
+            "favorito": true, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "El airfryer hace magia con el salmón: piel crujiente, interior meloso. El brócoli se carameliza.",
+            "ingredientes": [
+              "2 lomos de salmón (~200 g c/u)", "1 brócoli mediano en ramitos",
+              "1 limón", "1 cucharadita ajo en polvo", "eneldo seco",
+              "aceite de oliva", "sal", "pimienta negra"
+            ],
+            "pasos": [
+              "Aliñar salmón con aceite, ajo, eneldo, sal y zumo de limón.",
+              "Airfryer 200°C: brócoli con aceite y sal, 8 min.",
+              "Añadir salmón junto al brócoli. 10–12 min más.",
+              "Servir con rodajas de limón."
+            ],
+            "tags": ["airfryer", "pescado"],
+            "imagen": "bg_fish"
+          }
+        },
+        {
+          "id": "s1d5", "fecha": "2025-06-27", "dia": "Viernes", "dia_corto": "Vie",
+          "comida": {
+            "nombre": "Arroz con pollo al sofrito y azafrán",
+            "tipo": "carne", "airfryer": false, "tiempo": 40,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🥩", "color": "carne",
+            "descripcion": "Arroz meloso con pollo dorado y sofrito profundo. El azafrán da ese color dorado que lo hace especial.",
+            "ingredientes": [
+              "180 g arroz redondo", "2 contramuslos pollo s/hueso",
+              "1 pimiento rojo", "1 tomate maduro rallado", "1 cebolla",
+              "3 dientes de ajo", "hebras de azafrán (o colorante)",
+              "450 ml caldo de pollo", "pimentón dulce", "aceite", "sal"
+            ],
+            "pasos": [
+              "Dorar pollo troceado en aceite caliente. Retirar.",
+              "En el mismo aceite, sofreír cebolla, ajo y pimiento, 8 min.",
+              "Añadir tomate y pimentón. Cocinar 4 min.",
+              "Incorporar arroz y remover 1 min. Añadir caldo caliente con azafrán.",
+              "Añadir el pollo. Cocinar 18 min sin remover. Reposar 5 min."
+            ],
+            "tags": ["batch_cooking"],
+            "imagen": "bg_meat"
+          },
+          "cena": {
+            "nombre": "🍕 Pizza casera en airfryer con mozzarella y jamón",
+            "tipo": "especial", "airfryer": true, "tiempo": 15,
+            "favorito": true, "favorito_potencial": true,
+            "emoji_tipo": "🍕", "color": "especial",
+            "descripcion": "La pizza del viernes. Base crujiente de airfryer, mozzarella fundida, jamón y champiñones.",
+            "ingredientes": [
+              "2 bases pizza frescas Mercadona", "1 bote salsa tomate pizza",
+              "1 bola mozzarella fresca (125 g)", "80 g jamón cocido en lonchas",
+              "100 g champiñones laminados", "orégano seco", "aceite de oliva"
+            ],
+            "pasos": [
+              "Extender salsa sobre las bases.",
+              "Repartir mozzarella, jamón y champiñones.",
+              "Airfryer 200°C, 8–10 min hasta dorar.",
+              "Orégano fresco al sacar. Servir inmediatamente."
+            ],
+            "tags": ["especial", "airfryer"],
+            "imagen": "bg_special"
+          }
+        },
+        {
+          "id": "s1d6", "fecha": "2025-06-28", "dia": "Sábado", "dia_corto": "Sáb",
+          "comida": {
+            "nombre": "Berenjenas rellenas de carne y tomate gratinadas",
+            "tipo": "carne", "airfryer": false, "tiempo": 45,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🥩", "color": "carne",
+            "descripcion": "Las berenjenas asadas se convierten en el recipiente perfecto para un relleno sabroso de carne picada.",
+            "ingredientes": [
+              "2 berenjenas medianas", "250 g carne picada mixta",
+              "1 cebolla mediana", "3 dientes de ajo", "1 tomate maduro rallado",
+              "100 g mozzarella rallada", "orégano", "aceite de oliva", "sal"
+            ],
+            "pasos": [
+              "Horno 200°C. Berenjenas por la mitad, marcar la pulpa. 20 min.",
+              "Vaciar con cuchara. Reservar la pulpa picada.",
+              "Sofreír cebolla, ajo, carne y pulpa de berenjena con tomate.",
+              "Rellenar y cubrir con mozzarella. Gratinar 12 min."
+            ],
+            "tags": ["temporada", "adelantable"],
+            "imagen": "bg_meat"
+          },
+          "cena": {
+            "nombre": "Gazpacho andaluz con fuet y tostadas",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 5,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥤", "color": "facil",
+            "descripcion": "El gazpacho del verano. Frío, ácido y fresco. Con fuet y tostadas para que sea una cena completa.",
+            "ingredientes": [
+              "1 L gazpacho (brick Mercadona o casero)", "80 g fuet en rodajas",
+              "pan tostado", "aceite de oliva virgen extra"
+            ],
+            "pasos": [
+              "Servir el gazpacho bien frío.",
+              "Acompañar con fuet y tostadas con un hilo de aceite."
+            ],
+            "tags": ["sin_cocinar", "cena_facil", "temporada"],
+            "imagen": "bg_veg"
+          }
+        },
+        {
+          "id": "s1d7", "fecha": "2025-06-29", "dia": "Domingo", "dia_corto": "Dom",
+          "comida": {
+            "nombre": "Dorada a la sal con patatas al horno y hierbas",
+            "tipo": "pescado", "airfryer": false, "tiempo": 35,
+            "favorito": true, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "La dorada a la sal es la cocina mediterránea en su forma más pura. Jugosa, aromática, sin complicaciones.",
+            "ingredientes": [
+              "1 dorada entera limpia (~600 g)", "1 kg sal gorda",
+              "3 patatas medianas", "2 ramitas romero fresco",
+              "tomillo fresco", "2 limones", "aceite de oliva virgen extra"
+            ],
+            "pasos": [
+              "Horno 200°C. Patatas en rodajas con aceite, sal y hierbas, 25 min.",
+              "Cubrir completamente la dorada con sal gorda en bandeja.",
+              "Hornear 25–28 min a 200°C.",
+              "Romper costra con cuchara. Filetear y servir con aceite y limón."
+            ],
+            "tags": ["fin_de_semana", "pescado"],
+            "imagen": "bg_fish"
+          },
+          "cena": {
+            "nombre": "Revuelto de champiñones y espárragos trigueros",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 15,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥚", "color": "veg",
+            "descripcion": "Revuelto cremoso que aprovecha lo que queda de semana. Rápido, ligero y muy sabroso.",
+            "ingredientes": [
+              "4 huevos grandes", "200 g champiñones laminados",
+              "1 manojo espárragos trigueros", "2 dientes de ajo",
+              "aceite de oliva", "sal", "pimienta negra"
+            ],
+            "pasos": [
+              "Saltear ajo, champiñones y espárragos 6–7 min a fuego vivo.",
+              "Bajar el fuego. Añadir huevos batidos.",
+              "Remover suavemente hasta cuajar al punto. Servir inmediatamente."
+            ],
+            "tags": ["rapida", "cena_facil"],
+            "imagen": "bg_veg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "Semana 2",
+      "rango": "30 jun – 6 jul",
+      "dias": [
+        {
+          "id": "s2d1", "fecha": "2025-06-30", "dia": "Lunes", "dia_corto": "Lun",
+          "comida": {
+            "nombre": "Alubias blancas con verduras y chorizo",
+            "tipo": "legumbres", "airfryer": false, "tiempo": 30,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🌱", "color": "legumbres",
+            "descripcion": "Guiso reconfortante de alubias con pimientos de temporada. El chorizo da profundidad sin ser el protagonista.",
+            "ingredientes": [
+              "1 bote alubias blancas (400 g)", "1 pimiento verde", "1 pimiento rojo",
+              "1 calabacín pequeño", "1 cebolla", "2 dientes de ajo",
+              "1 tomate maduro", "80 g chorizo en rodajas", "pimentón dulce",
+              "aceite de oliva", "sal"
+            ],
+            "pasos": [
+              "Sofreír cebolla, ajo y pimientos en aceite, 8 min.",
+              "Añadir tomate y pimentón. Cocinar 4 min.",
+              "Incorporar alubias, calabacín y chorizo. 15 min a fuego suave.",
+              "Rectificar sal y servir."
+            ],
+            "tags": ["batch_cooking", "adelantable"],
+            "imagen": "bg_leg"
+          },
+          "cena": {
+            "nombre": "Tabla de jamón, queso fresco y tomate cherry",
+            "tipo": "carne", "airfryer": false, "tiempo": 5,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🍖", "color": "facil",
+            "descripcion": "Cena de picoteo. El queso fresco tipo burgos es suave y fresco, perfecto para el verano.",
+            "ingredientes": [
+              "100 g jamón serrano", "100 g queso fresco tipo burgos",
+              "150 g tomate cherry", "pan de cristal",
+              "aceite de oliva", "sal en escamas"
+            ],
+            "pasos": [
+              "Disponer todos los ingredientes en una tabla.",
+              "Añadir aceite y sal en escamas sobre el queso."
+            ],
+            "tags": ["sin_cocinar", "cena_facil"],
+            "imagen": "bg_meat"
+          }
+        },
+        {
+          "id": "s2d2", "fecha": "2025-07-01", "dia": "Martes", "dia_corto": "Mar",
+          "comida": {
+            "nombre": "Bacalao al pil-pil con pimientos del piquillo",
+            "tipo": "pescado", "airfryer": false, "tiempo": 35,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "Técnica vasca con resultado cremoso y sedoso. El pil-pil requiere paciencia pero el resultado vale cada movimiento.",
+            "ingredientes": [
+              "2 lomos bacalao desalado (~300 g)", "6 dientes de ajo en láminas",
+              "1 bote pimientos del piquillo", "200 ml aceite de oliva virgen extra",
+              "perejil fresco", "guindilla opcional"
+            ],
+            "pasos": [
+              "Aceite templado (no caliente). Confitar ajo 5 min. Retirar.",
+              "Añadir bacalao con piel hacia arriba. Fuego muy suave.",
+              "Mover la cazuela en círculos constantemente para ligar la gelatina.",
+              "Cuando esté ligado, añadir pimientos y ajo. Perejil al servir."
+            ],
+            "tags": ["novedad", "pescado"],
+            "imagen": "bg_fish"
+          },
+          "cena": {
+            "nombre": "Bocadillo de atún, pimiento asado y huevo",
+            "tipo": "pescado", "airfryer": false, "tiempo": 10,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥖", "color": "facil",
+            "descripcion": "Bocadillo de los de verdad. Atún en aceite con pimientos asados y huevo duro. Contundente y rápido.",
+            "ingredientes": [
+              "1 barra de chapata o pan de payés",
+              "2 latas de atún en aceite de oliva", "pimientos asados en tarro",
+              "2 huevos cocidos", "mayonesa ligera (opcional)", "sal"
+            ],
+            "pasos": [
+              "Cocer huevos si no están ya cocidos, 10 min.",
+              "Abrir el pan. Añadir atún escurrido, pimientos y huevo laminado.",
+              "Aliñar con aceite del atún. Sal al gusto."
+            ],
+            "tags": ["cena_facil", "rapida"],
+            "imagen": "bg_fish"
+          }
+        },
+        {
+          "id": "s2d3", "fecha": "2025-07-02", "dia": "Miércoles", "dia_corto": "Mié",
+          "comida": {
+            "nombre": "Muslos de pollo al airfryer con patatas y romero",
+            "tipo": "carne", "airfryer": true, "tiempo": 35,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🥩", "color": "carne",
+            "descripcion": "El airfryer consigue esa piel dorada y crujiente en la mitad del tiempo que el horno.",
+            "ingredientes": [
+              "4 muslos de pollo con piel", "3 patatas medianas en gajos",
+              "2 ramitas romero fresco", "3 dientes de ajo machacados",
+              "pimentón dulce", "aceite de oliva", "sal", "pimienta"
+            ],
+            "pasos": [
+              "Mezclar pollo y patatas con aceite, ajo, romero, pimentón y sal.",
+              "Airfryer 200°C: patatas 15 min primero.",
+              "Añadir muslos. Cocinar 20 min más girando a mitad.",
+              "Verificar que el pollo alcanza 75°C en el centro."
+            ],
+            "tags": ["airfryer"],
+            "imagen": "bg_meat"
+          },
+          "cena": {
+            "nombre": "Crema fría de pepino y yogur con eneldo",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 15,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🥬", "color": "veg",
+            "descripcion": "Versión ligera del tzatziki griego como sopa fría. Refrescante para las noches de julio.",
+            "ingredientes": [
+              "2 pepinos grandes", "2 yogures griegos naturales",
+              "1 diente de ajo pequeño", "eneldo fresco",
+              "1 limón (zumo)", "aceite de oliva virgen extra",
+              "sal", "pan de pita o tostadas para acompañar"
+            ],
+            "pasos": [
+              "Pelar pepinos, reservar un trozo para decorar.",
+              "Triturar pepino con yogur, ajo, limón y eneldo.",
+              "Colar o dejar con textura. Enfriar 30 min.",
+              "Servir con pepino en cubitos, eneldo fresco y aceite."
+            ],
+            "tags": ["novedad", "vegetariano", "temporada"],
+            "imagen": "bg_veg"
+          }
+        },
+        {
+          "id": "s2d4", "fecha": "2025-07-03", "dia": "Jueves", "dia_corto": "Jue",
+          "comida": {
+            "nombre": "Ensalada de garbanzos, pimiento asado y pepino",
+            "tipo": "legumbres", "airfryer": false, "tiempo": 15,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🌱", "color": "legumbres",
+            "descripcion": "Ensalada mediterránea de verano. Sin cocinar, llena mucho y aguanta bien en la nevera.",
+            "ingredientes": [
+              "1 bote garbanzos (400 g)", "1 bote pimientos asados",
+              "1 pepino grande", "50 g queso feta (Sergi) o queso fresco suave (Alba)",
+              "aceitunas negras sin hueso", "perejil fresco",
+              "1 cucharadita comino molido", "aceite de oliva", "limón", "sal"
+            ],
+            "pasos": [
+              "Escurrir garbanzos y pimientos. Secar bien.",
+              "Trocear pepino y pimientos. Mezclar con garbanzos.",
+              "Aliñar con aceite, limón, comino y sal.",
+              "Añadir queso, aceitunas y perejil. Enfriar 15 min antes de servir."
+            ],
+            "tags": ["sin_cocinar", "vegetariano", "temporada"],
+            "imagen": "bg_leg"
+          },
+          "cena": {
+            "nombre": "🌮 Tacos de pollo al airfryer con guacamole",
+            "tipo": "especial", "airfryer": true, "tiempo": 25,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🌮", "color": "especial",
+            "descripcion": "Noche mexicana. El pollo en tiritas crujientes del airfryer, guacamole casero y pico de gallo.",
+            "ingredientes": [
+              "2 pechugas de pollo en tiritas", "8 tortillas de trigo pequeñas",
+              "2 aguacates maduros", "2 tomates maduros", "1 cebolla morada",
+              "cilantro fresco", "2 limas", "comino", "pimentón ahumado",
+              "sal", "jalapeño opcional"
+            ],
+            "pasos": [
+              "Marinar pollo con comino, pimentón, sal y zumo de lima.",
+              "Airfryer 200°C, 12 min. Apartar y reposar.",
+              "Guacamole: aguacate machacado con lima, sal y cebolla morada.",
+              "Pico de gallo: tomate, cebolla, cilantro y lima.",
+              "Calentar tortillas. Montar los tacos."
+            ],
+            "tags": ["especial", "airfryer", "mexicano"],
+            "imagen": "bg_special"
+          }
+        },
+        {
+          "id": "s2d5", "fecha": "2025-07-04", "dia": "Viernes", "dia_corto": "Vie",
+          "comida": {
+            "nombre": "Fideuà de pescado y gambas al horno",
+            "tipo": "pescado", "airfryer": false, "tiempo": 40,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "La prima valenciana de la paella. Los fideos absorben el caldo de pescado y quedan melosos y llenos de sabor.",
+            "ingredientes": [
+              "200 g fideos nº 2 o cabello ángel grueso",
+              "200 g gambas peladas (congeladas)", "200 g rape o merluza en trozos",
+              "1 pimiento rojo", "2 tomates maduros rallados", "3 dientes de ajo",
+              "hebras de azafrán", "500 ml caldo de pescado",
+              "aceite de oliva", "sal", "alioli para acompañar"
+            ],
+            "pasos": [
+              "Sofreír ajo y pimiento. Añadir tomate y azafrán, 5 min.",
+              "Tostar los fideos en el sofrito 2 min.",
+              "Añadir caldo caliente. Cocinar 8 min.",
+              "Añadir gambas y rape. 5 min más.",
+              "Gratinar 3 min. Reposar con trapo. Alioli aparte."
+            ],
+            "tags": ["pescado", "novedad", "fin_de_semana"],
+            "imagen": "bg_fish"
+          },
+          "cena": {
+            "nombre": "Tortilla francesa de queso con pan con tomate",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 10,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥚", "color": "facil",
+            "descripcion": "La cena más rápida que existe. Tortilla francesa con queso fundido y pan bien frotado con tomate.",
+            "ingredientes": [
+              "4 huevos", "50 g queso suave para fundir",
+              "pan de cristal", "2 tomates maduros",
+              "aceite de oliva", "sal"
+            ],
+            "pasos": [
+              "Batir huevos con sal. Cuajar en sartén con poco aceite.",
+              "Antes de plegar, añadir queso rallado. Plegar.",
+              "Pan con tomate: frotar tomate partido, aceite y sal."
+            ],
+            "tags": ["cena_facil", "vegetariano", "rapida"],
+            "imagen": "bg_veg"
+          }
+        },
+        {
+          "id": "s2d6", "fecha": "2025-07-05", "dia": "Sábado", "dia_corto": "Sáb",
+          "comida": {
+            "nombre": "🍔 Hamburguesas caseras con cebolla caramelizada y mozzarella",
+            "tipo": "especial", "airfryer": true, "tiempo": 30,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🍔", "color": "especial",
+            "descripcion": "Hamburguesa del sábado. Carne picada de calidad, mozzarella fundida y cebolla caramelizada lenta.",
+            "ingredientes": [
+              "400 g carne picada de ternera", "2 panecillos brioche para hamburguesa",
+              "1 cebolla grande", "1 bola mozzarella (125 g)",
+              "lechuga", "tomate en rodajas", "mostaza", "ketchup",
+              "sal", "pimienta", "ajo en polvo"
+            ],
+            "pasos": [
+              "Caramelizar cebolla 35 min a fuego muy bajo con pizca de sal.",
+              "Mezclar carne con sal, pimienta y ajo. Formar dos hamburguesas.",
+              "Airfryer 200°C, 8 min. Girar. Añadir mozzarella los últimos 2 min.",
+              "Montar: pan, mostaza, lechuga, hamburguesa, cebolla, ketchup."
+            ],
+            "tags": ["especial", "airfryer"],
+            "imagen": "bg_special"
+          },
+          "cena": {
+            "nombre": "Gazpacho con huevo duro y pepino",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 5,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥤", "color": "facil",
+            "descripcion": "El final perfecto de un sábado de verano. Gazpacho frío con guarnición.",
+            "ingredientes": [
+              "1 L gazpacho (casero o brick)", "2 huevos cocidos",
+              "1 pepino", "pan tostado", "aceite de oliva"
+            ],
+            "pasos": [
+              "Servir el gazpacho muy frío.",
+              "Guarnición: huevo y pepino en dados, pan tostado."
+            ],
+            "tags": ["sin_cocinar", "cena_facil", "temporada"],
+            "imagen": "bg_veg"
+          }
+        },
+        {
+          "id": "s2d7", "fecha": "2025-07-06", "dia": "Domingo", "dia_corto": "Dom",
+          "comida": {
+            "nombre": "Lubina al horno con verduras de temporada y vino blanco",
+            "tipo": "pescado", "airfryer": false, "tiempo": 35,
+            "favorito": false, "favorito_potencial": true,
+            "emoji_tipo": "🐟", "color": "pescado",
+            "descripcion": "La lubina es más delicada que la dorada. El vino blanco y las verduras de julio crean un fondo aromático.",
+            "ingredientes": [
+              "1 lubina entera limpia (~600 g) o 2 pequeñas",
+              "2 patatas medianas en rodajas", "1 pimiento rojo",
+              "1 calabacín", "1 cebolla en tiras",
+              "100 ml vino blanco", "1 limón", "tomillo fresco",
+              "aceite de oliva", "sal"
+            ],
+            "pasos": [
+              "Horno 200°C. Base de patatas y cebolla con aceite y sal, 15 min.",
+              "Añadir pimiento y calabacín. 10 min más.",
+              "Colocar lubina sobre las verduras. Regar con vino y limón.",
+              "Hornear 18–20 min. Servir con tomillo fresco."
+            ],
+            "tags": ["fin_de_semana", "pescado", "temporada"],
+            "imagen": "bg_fish"
+          },
+          "cena": {
+            "nombre": "Crema de calabacín con quesito y pipas",
+            "tipo": "vegetariano", "airfryer": false, "tiempo": 20,
+            "favorito": false, "favorito_potencial": false,
+            "emoji_tipo": "🥬", "color": "veg",
+            "descripcion": "La crema que no pesa. El calabacín de julio está en su mejor momento. Las pipas dan textura.",
+            "ingredientes": [
+              "2 calabacines grandes", "1 cebolla mediana",
+              "1 quesito suave tipo Philadelphia (30 g)",
+              "400 ml caldo de verduras", "pipas de girasol peladas",
+              "aceite de oliva", "sal", "pimienta"
+            ],
+            "pasos": [
+              "Sofreír cebolla y calabacín en cubos, 8 min.",
+              "Añadir caldo. Cocinar 10 min tapado.",
+              "Triturar con el quesito hasta textura lisa.",
+              "Servir templada con pipas y un hilo de aceite."
+            ],
+            "tags": ["vegetariano", "temporada", "rapida"],
+            "imagen": "bg_veg"
+          }
+        }
+      ]
+    }
+  ],
+  "compra": {
+    "semana1": {
+      "fruta_verdura": [
+        {"nombre": "Cebollas", "cantidad": "6 unidades"},
+        {"nombre": "Tomates maduros para cocinar", "cantidad": "8 unidades"},
+        {"nombre": "Tomate cherry", "cantidad": "250 g"},
+        {"nombre": "Pimientos rojos", "cantidad": "4 unidades"},
+        {"nombre": "Pimientos verdes", "cantidad": "2 unidades"},
+        {"nombre": "Calabacín mediano", "cantidad": "2 unidades"},
+        {"nombre": "Berenjenas medianas", "cantidad": "2 unidades"},
+        {"nombre": "Zanahoria grande", "cantidad": "2 unidades"},
+        {"nombre": "Brócoli mediano", "cantidad": "1 unidad"},
+        {"nombre": "Espinacas frescas", "cantidad": "200 g"},
+        {"nombre": "Champiñones laminados", "cantidad": "200 g"},
+        {"nombre": "Espárragos trigueros", "cantidad": "1 manojo"},
+        {"nombre": "Patatas", "cantidad": "2,5 kg"},
+        {"nombre": "Limones", "cantidad": "4 unidades"},
+        {"nombre": "Ajos (cabeza)", "cantidad": "1 cabeza"},
+        {"nombre": "Lechuga mezclum", "cantidad": "1 bolsa"},
+        {"nombre": "Pepino", "cantidad": "1 unidad"},
+        {"nombre": "Perejil fresco", "cantidad": "1 manojo"},
+        {"nombre": "Albahaca fresca", "cantidad": "1 maceta"},
+        {"nombre": "Romero fresco", "cantidad": "1 ramita"},
+        {"nombre": "Tomillo fresco", "cantidad": "1 ramita"}
+      ],
+      "carniceria": [
+        {"nombre": "Pechugas de pollo", "cantidad": "2 filetes (~360 g)"},
+        {"nombre": "Contramuslos de pollo sin hueso", "cantidad": "2 unidades"},
+        {"nombre": "Carne picada mixta (cerdo+ternera)", "cantidad": "250 g"},
+        {"nombre": "Jamón serrano", "cantidad": "200 g"},
+        {"nombre": "Jamón cocido en lonchas", "cantidad": "80 g"},
+        {"nombre": "Fuet", "cantidad": "1 pieza pequeña"}
+      ],
+      "pescaderia": [
+        {"nombre": "Lomos de merluza frescos", "cantidad": "2 unidades (~350 g)"},
+        {"nombre": "Lomos de salmón", "cantidad": "2 unidades (~400 g)"},
+        {"nombre": "Dorada entera limpia", "cantidad": "1 unidad (~600 g)"}
+      ],
+      "lacteos": [
+        {"nombre": "Huevos", "cantidad": "12 unidades"},
+        {"nombre": "Mozzarella fresca en bola", "cantidad": "2 unidades (125 g c/u)"},
+        {"nombre": "Mozzarella rallada", "cantidad": "100 g"},
+        {"nombre": "Queso fresco tipo burgos", "cantidad": "1 tarrina"}
+      ],
+      "conservas": [
+        {"nombre": "Lentejas pardinas en bote", "cantidad": "1 × 400 g"},
+        {"nombre": "Garbanzos cocidos en bote", "cantidad": "1 × 400 g"},
+        {"nombre": "Tomate triturado", "cantidad": "2 × 400 g"},
+        {"nombre": "Salsa de tomate para pizza", "cantidad": "1 bote pequeño"},
+        {"nombre": "Caldo de pollo tetrabrik", "cantidad": "1 L"},
+        {"nombre": "Caldo de verduras tetrabrik", "cantidad": "500 ml"},
+        {"nombre": "Gazpacho brick", "cantidad": "1 L"}
+      ],
+      "cereales": [
+        {"nombre": "Pasta rigatoni o penne", "cantidad": "250 g"},
+        {"nombre": "Arroz redondo", "cantidad": "250 g"},
+        {"nombre": "Bases pizza frescas Mercadona", "cantidad": "2 unidades"}
+      ],
+      "panaderia": [
+        {"nombre": "Pan de cristal", "cantidad": "2 barras"},
+        {"nombre": "Pan tostado (paquete)", "cantidad": "1 paquete"}
+      ],
+      "agua": [
+        {"nombre": "Garrafas de agua 5 L", "cantidad": "7 unidades"}
+      ],
+      "otros": [
+        {"nombre": "Sal gorda (para dorada)", "cantidad": "1 kg"},
+        {"nombre": "Pimentón dulce", "cantidad": "reponer si falta"},
+        {"nombre": "Pimentón ahumado", "cantidad": "reponer si falta"},
+        {"nombre": "Comino molido", "cantidad": "reponer si falta"},
+        {"nombre": "Orégano seco", "cantidad": "reponer si falta"},
+        {"nombre": "Eneldo seco", "cantidad": "reponer si falta"},
+        {"nombre": "Azafrán hebras (o colorante paella)", "cantidad": "1 sobre"},
+        {"nombre": "Aceite de oliva virgen extra", "cantidad": "reponer si falta"},
+        {"nombre": "Ajo en polvo", "cantidad": "reponer si falta"},
+        {"nombre": "Vinagre de vino blanco", "cantidad": "reponer si falta"}
+      ]
+    },
+    "semana2": {
+      "fruta_verdura": [
+        {"nombre": "Cebollas", "cantidad": "4 unidades"},
+        {"nombre": "Cebolla morada", "cantidad": "2 unidades"},
+        {"nombre": "Tomates maduros", "cantidad": "6 unidades"},
+        {"nombre": "Tomate cherry", "cantidad": "150 g"},
+        {"nombre": "Pimientos rojos", "cantidad": "2 unidades"},
+        {"nombre": "Pimientos verdes", "cantidad": "2 unidades"},
+        {"nombre": "Calabacines grandes", "cantidad": "3 unidades"},
+        {"nombre": "Pepinos", "cantidad": "3 unidades"},
+        {"nombre": "Patatas", "cantidad": "2 kg"},
+        {"nombre": "Aguacates maduros", "cantidad": "2 unidades"},
+        {"nombre": "Limas", "cantidad": "3 unidades"},
+        {"nombre": "Limones", "cantidad": "2 unidades"},
+        {"nombre": "Ajos (cabeza)", "cantidad": "1 cabeza"},
+        {"nombre": "Lechuga", "cantidad": "1 unidad"},
+        {"nombre": "Perejil fresco", "cantidad": "1 manojo"},
+        {"nombre": "Cilantro fresco", "cantidad": "1 manojo"},
+        {"nombre": "Eneldo fresco", "cantidad": "1 manojo"},
+        {"nombre": "Tomillo fresco", "cantidad": "1 ramita"}
+      ],
+      "carniceria": [
+        {"nombre": "Muslos de pollo con piel", "cantidad": "4 unidades"},
+        {"nombre": "Pechugas de pollo", "cantidad": "2 filetes (para tacos)"},
+        {"nombre": "Carne picada de ternera", "cantidad": "400 g"},
+        {"nombre": "Jamón serrano", "cantidad": "100 g"},
+        {"nombre": "Chorizo en rodajas", "cantidad": "80 g"}
+      ],
+      "pescaderia": [
+        {"nombre": "Lomos de bacalao desalado", "cantidad": "2 lomos (~300 g)"},
+        {"nombre": "Gambas peladas (congeladas)", "cantidad": "200 g"},
+        {"nombre": "Rape o merluza en trozos", "cantidad": "200 g"},
+        {"nombre": "Lubina entera limpia", "cantidad": "1 unidad (~600 g)"}
+      ],
+      "lacteos": [
+        {"nombre": "Huevos", "cantidad": "10 unidades"},
+        {"nombre": "Mozzarella fresca en bola", "cantidad": "1 unidad (125 g)"},
+        {"nombre": "Queso fresco tipo burgos", "cantidad": "1 tarrina"},
+        {"nombre": "Queso feta", "cantidad": "50 g (para Sergi)"},
+        {"nombre": "Yogures griegos naturales", "cantidad": "2 unidades"},
+        {"nombre": "Quesito suave tipo Philadelphia", "cantidad": "1 tarrina pequeña"}
+      ],
+      "conservas": [
+        {"nombre": "Alubias blancas cocidas en bote", "cantidad": "1 × 400 g"},
+        {"nombre": "Garbanzos cocidos en bote", "cantidad": "1 × 400 g"},
+        {"nombre": "Pimientos del piquillo en bote", "cantidad": "1 bote"},
+        {"nombre": "Pimientos asados en tarro", "cantidad": "1 tarro"},
+        {"nombre": "Atún en aceite de oliva", "cantidad": "2 latas"},
+        {"nombre": "Aceitunas negras sin hueso", "cantidad": "1 tarro pequeño"},
+        {"nombre": "Caldo de pescado tetrabrik", "cantidad": "500 ml"},
+        {"nombre": "Gazpacho brick", "cantidad": "1 L"},
+        {"nombre": "Alioli Mercadona", "cantidad": "1 bote pequeño"}
+      ],
+      "cereales": [
+        {"nombre": "Fideos nº 2 para fideuà", "cantidad": "200 g"},
+        {"nombre": "Tortillas de trigo pequeñas", "cantidad": "8 unidades"},
+        {"nombre": "Pan de pita o tostadas integrales", "cantidad": "1 paquete"}
+      ],
+      "panaderia": [
+        {"nombre": "Pan de cristal", "cantidad": "2 barras"},
+        {"nombre": "Chapata o barra para bocadillos", "cantidad": "1 unidad"},
+        {"nombre": "Panecillos brioche para hamburguesa", "cantidad": "2 unidades"}
+      ],
+      "agua": [
+        {"nombre": "Garrafas de agua 5 L", "cantidad": "7 unidades"}
+      ],
+      "otros": [
+        {"nombre": "Aceite de oliva virgen extra 200 ml (para pil-pil)", "cantidad": "reponer si falta"},
+        {"nombre": "Vino blanco para cocinar", "cantidad": "1 botella pequeña"},
+        {"nombre": "Mayonesa ligera", "cantidad": "1 bote pequeño"},
+        {"nombre": "Mostaza", "cantidad": "reponer si falta"},
+        {"nombre": "Ketchup", "cantidad": "reponer si falta"},
+        {"nombre": "Jalapeño en escabeche", "cantidad": "1 bote (opcional)"},
+        {"nombre": "Pipas de girasol peladas", "cantidad": "1 bolsa pequeña"},
+        {"nombre": "Comino molido", "cantidad": "reponer si falta"},
+        {"nombre": "Pimentón ahumado", "cantidad": "reponer si falta"}
+      ]
+    }
+  },
+  "batch_cooking": [
+    {
+      "tarea": "Preparar sofrito doble de tomate",
+      "detalle": "Sirve para lentejas lunes, pasta miércoles, arroz viernes y berenjenas sábado",
+      "tiempo_min": 20,
+      "ahorro_min": 60,
+      "semana": 1
+    },
+    {
+      "tarea": "Hacer gazpacho casero",
+      "detalle": "Aguanta 4–5 días en nevera. Para cena del sábado y sobra para la semana siguiente",
+      "tiempo_min": 15,
+      "ahorro_min": 30,
+      "semana": 1
+    },
+    {
+      "tarea": "Cocer 6 huevos duros",
+      "detalle": "Tortilla miércoles, revuelto domingo, ensaladas y como snack",
+      "tiempo_min": 12,
+      "ahorro_min": 25,
+      "semana": 1
+    },
+    {
+      "tarea": "Lavar y cortar toda la verdura de la semana",
+      "detalle": "Guardar en tuppers en la nevera. Ahorra 5–8 min por día",
+      "tiempo_min": 25,
+      "ahorro_min": 50,
+      "semana": 1
+    },
+    {
+      "tarea": "Marinar el pollo del lunes noche",
+      "detalle": "Limón, ajo y orégano. Cuanto más tiempo, más sabor",
+      "tiempo_min": 5,
+      "ahorro_min": 10,
+      "semana": 1
+    },
+    {
+      "tarea": "Caramelizar la cebolla para las hamburguesas",
+      "detalle": "Hacerla el domingo para el sábado. 40 min a fuego muy bajo, vale la pena",
+      "tiempo_min": 40,
+      "ahorro_min": 40,
+      "semana": 2
+    },
+    {
+      "tarea": "Preparar guacamole y pico de gallo",
+      "detalle": "Para los tacos del jueves. El pico de gallo aguanta 2 días",
+      "tiempo_min": 15,
+      "ahorro_min": 20,
+      "semana": 2
+    },
+    {
+      "tarea": "Cocer 4 huevos duros",
+      "detalle": "Bocadillo martes, gazpacho sábado",
+      "tiempo_min": 12,
+      "ahorro_min": 20,
+      "semana": 2
+    }
+  ],
+  "congelador": [
+    {
+      "dia": "Miércoles 25 jun",
+      "dia_corto": "Mié 25",
+      "accion": "Sacar gambas peladas a la nevera",
+      "para": "Fideuà del viernes 4 jul",
+      "urgente": false,
+      "semana": 1
+    },
+    {
+      "dia": "Jueves 26 jun",
+      "dia_corto": "Jue 26",
+      "accion": "Sacar el salmón si estaba congelado",
+      "para": "Cena del jueves 26 jun",
+      "urgente": true,
+      "semana": 1
+    },
+    {
+      "dia": "Jueves 3 jul",
+      "dia_corto": "Jue 3",
+      "accion": "Sacar gambas y rape a la nevera por la noche",
+      "para": "Fideuà del viernes 4 jul",
+      "urgente": true,
+      "semana": 2
+    }
+  ],
+  "estadisticas": {
+    "semana1": {
+      "pescado": 3, "legumbres": 2, "vegetariano": 4,
+      "carne": 5, "airfryer": 3, "especiales": 1, "cenas_faciles": 3
+    },
+    "semana2": {
+      "pescado": 4, "legumbres": 2, "vegetariano": 5,
+      "carne": 5, "airfryer": 3, "especiales": 2, "cenas_faciles": 3
+    },
+    "total": {
+      "pescado": 7, "legumbres": 4, "vegetariano": 9,
+      "carne": 10, "airfryer": 6, "especiales": 3,
+      "cenas_faciles": 6, "favoritos_potenciales": 12
+    }
+  }
+}
