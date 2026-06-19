@@ -1,0 +1,663 @@
+{
+  "meta": {
+    "version": "2025-06-16",
+    "quincenal_id": "2025-Q12B",
+    "period_start": "2025-06-16",
+    "period_end": "2025-06-30",
+    "generated_at": "2025-06-14T10:00:00Z",
+    "season": "verano",
+    "special_week_theme": "pizza",
+    "notes": "Menú mediterráneo de verano con productos de temporada"
+  },
+
+  "config": {
+    "household": {
+      "name": "Casita de Alba y Sergi",
+      "users": [
+        {
+          "id": "alba",
+          "name": "Alba",
+          "avatar": null,
+          "cheese_preferences": ["mozzarella", "burrata", "suaves", "fundidos"],
+          "dislikes": ["ensaladilla_rusa"]
+        },
+        {
+          "id": "sergi",
+          "name": "Sergi",
+          "avatar": null,
+          "cheese_preferences": ["todos"],
+          "dislikes": ["ensaladilla_rusa"]
+        }
+      ]
+    },
+    "supermarket": "mercadona",
+    "cooking_devices": ["airfryer", "horno", "vitroceramica", "olla"],
+    "planning_day": "saturday",
+    "water": {
+      "daily_goal_liters": 5,
+      "biweekly_goal_liters": 70,
+      "biweekly_bottles": 14,
+      "bottle_size_liters": 5
+    }
+  },
+
+  "recipes": [
+    {
+      "id": "pollo-limon-patatas",
+      "name": "Pollo al limón con patatas y aceitunas",
+      "description": "Muslos de pollo jugosos al airfryer con patatas crujientes y aceitunas negras. Sabor mediterráneo intenso.",
+      "image": "assets/images/recipes/pollo-limon-patatas.jpg",
+      "image_optional": true,
+      "time_minutes": 35,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["airfryer", "temporada", "mediterranea", "pollo", "sin-gluten"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano"],
+      "cooking_device": "airfryer",
+      "airfryer_temp": 185,
+      "airfryer_time": 22,
+      "airfryer_tip": "Precalentar 3 min. Dar la vuelta a los 12 min. Las patatas van debajo del pollo.",
+      "ingredients": [
+        { "id": "muslos-pollo", "name": "Muslos de pollo", "quantity": 4, "unit": "unidades", "category": "frescos", "supermarket_section": "Carne y aves", "pantry_item": false, "optional": false },
+        { "id": "patatas", "name": "Patatas medianas", "quantity": 4, "unit": "unidades", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "aceitunas-negras", "name": "Aceitunas negras", "quantity": 100, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": true, "optional": false },
+        { "id": "limon", "name": "Limones", "quantity": 2, "unit": "unidades", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "aove", "name": "Aceite de oliva virgen extra", "quantity": 3, "unit": "cucharadas", "category": "despensa", "supermarket_section": "Aceites", "pantry_item": true, "optional": false },
+        { "id": "romero", "name": "Romero fresco", "quantity": 2, "unit": "ramitas", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": true }
+      ],
+      "steps": [
+        { "order": 1, "text": "Precalentar el airfryer a 185°C durante 3 minutos.", "duration_minutes": 3, "tip": null },
+        { "order": 2, "text": "Cortar las patatas en gajos y mezclar con AOVE, sal y pimienta.", "duration_minutes": 3, "tip": null },
+        { "order": 3, "text": "Marinar el pollo con zumo de limón, AOVE, romero y sal.", "duration_minutes": 5, "tip": "Dejar marinar 10 min si hay tiempo" },
+        { "order": 4, "text": "Colocar las patatas en la base del airfryer y el pollo encima.", "duration_minutes": 1, "tip": null },
+        { "order": 5, "text": "Cocinar 22 minutos a 185°C, dando la vuelta al pollo a los 12 min.", "duration_minutes": 22, "tip": "Las patatas quedan más crujientes si las mueves también a mitad" },
+        { "order": 6, "text": "Añadir las aceitunas los últimos 5 minutos.", "duration_minutes": 5, "tip": null }
+      ],
+      "nutrition": { "calories": 485, "protein": 38, "carbs": 32, "fat": 22 },
+      "batch_compatible": true,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["pollo-verduras-horno", "muslos-pollo-naranja"],
+      "category": "carne",
+      "subcategory": "pollo"
+    },
+    {
+      "id": "guiso-lentejas-mediterraneo",
+      "name": "Guiso de lentejas mediterráneo",
+      "description": "Lentejas pardinas con espinacas frescas, zanahoria y especias mediterráneas. Reconfortante y nutritivo.",
+      "image": "assets/images/recipes/guiso-lentejas.jpg",
+      "image_optional": true,
+      "time_minutes": 40,
+      "difficulty": "fácil",
+      "servings": 4,
+      "tags": ["legumbre", "batch", "vegano", "temporada", "olla"],
+      "meal_type": ["lunch"],
+      "season": ["otono", "invierno", "primavera", "verano"],
+      "cooking_device": "olla",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "lentejas-pardinas", "name": "Lentejas pardinas", "quantity": 400, "unit": "g", "category": "despensa", "supermarket_section": "Legumbres", "pantry_item": true, "optional": false },
+        { "id": "espinacas", "name": "Espinacas frescas", "quantity": 200, "unit": "g", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "zanahoria", "name": "Zanahorias", "quantity": 2, "unit": "unidades", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "tomate-triturado", "name": "Tomate triturado", "quantity": 200, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": true, "optional": false },
+        { "id": "cebolla", "name": "Cebolla", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "ajo", "name": "Dientes de ajo", "quantity": 3, "unit": "unidades", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": true, "optional": false },
+        { "id": "comino", "name": "Comino molido", "quantity": 1, "unit": "cucharadita", "category": "despensa", "supermarket_section": "Especias", "pantry_item": true, "optional": false },
+        { "id": "pimenton", "name": "Pimentón dulce", "quantity": 1, "unit": "cucharadita", "category": "despensa", "supermarket_section": "Especias", "pantry_item": true, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Sofreír la cebolla y el ajo picados en AOVE a fuego medio hasta dorar.", "duration_minutes": 8, "tip": null },
+        { "order": 2, "text": "Añadir zanahoria en rodajas, pimentón y comino. Mezclar 2 minutos.", "duration_minutes": 2, "tip": null },
+        { "order": 3, "text": "Incorporar el tomate triturado y cocinar 5 minutos.", "duration_minutes": 5, "tip": null },
+        { "order": 4, "text": "Añadir las lentejas (previamente remojadas 1h) y cubrir con agua. Cocer 25 min.", "duration_minutes": 25, "tip": "Si usas lentejas de bote, solo 10 min" },
+        { "order": 5, "text": "Incorporar las espinacas los últimos 5 minutos. Salar y servir.", "duration_minutes": 5, "tip": null }
+      ],
+      "nutrition": { "calories": 320, "protein": 18, "carbs": 48, "fat": 6 },
+      "batch_compatible": true,
+      "freezable": true,
+      "freezer_duration_weeks": 5,
+      "similar_recipes": ["garbanzos-espinacas", "sopa-lentejas-roja"],
+      "category": "legumbre",
+      "subcategory": "lentejas"
+    },
+    {
+      "id": "merluza-verduras-horno",
+      "name": "Merluza al horno con verduras asadas",
+      "description": "Lomos de merluza sobre cama de verduras de temporada asadas con limón y hierbas aromáticas.",
+      "image": "assets/images/recipes/merluza-verduras.jpg",
+      "image_optional": true,
+      "time_minutes": 30,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["pescado", "horno", "sin-gluten", "temporada", "ligero"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano"],
+      "cooking_device": "horno",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "merluza-lomos", "name": "Lomos de merluza", "quantity": 400, "unit": "g", "category": "frescos", "supermarket_section": "Pescadería", "pantry_item": false, "optional": false },
+        { "id": "calabacin", "name": "Calabacín", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "pimiento-rojo", "name": "Pimiento rojo", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "tomates-cherry", "name": "Tomates cherry", "quantity": 200, "unit": "g", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "limon", "name": "Limón", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "perejil", "name": "Perejil fresco", "quantity": 1, "unit": "manojo", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": true }
+      ],
+      "steps": [
+        { "order": 1, "text": "Precalentar el horno a 200°C. Cortar las verduras en trozos medianos.", "duration_minutes": 3, "tip": null },
+        { "order": 2, "text": "Colocar las verduras en bandeja con AOVE, sal y pimienta. Hornear 15 min.", "duration_minutes": 15, "tip": null },
+        { "order": 3, "text": "Colocar los lomos de merluza sobre las verduras. Añadir zumo de limón.", "duration_minutes": 2, "tip": null },
+        { "order": 4, "text": "Hornear 10-12 minutos más hasta que la merluza esté opaca.", "duration_minutes": 12, "tip": "No sobrecocinar. Está lista cuando se separa fácilmente con un tenedor" }
+      ],
+      "nutrition": { "calories": 280, "protein": 35, "carbs": 14, "fat": 9 },
+      "batch_compatible": false,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["salmon-verduras", "dorada-horno"],
+      "category": "pescado",
+      "subcategory": "merluza"
+    },
+    {
+      "id": "gazpacho-andaluz",
+      "name": "Gazpacho andaluz",
+      "description": "El clásico gazpacho con tomates maduros de verano, pepino y pimiento. Frío, fresco y sin cocción.",
+      "image": "assets/images/recipes/gazpacho.jpg",
+      "image_optional": true,
+      "time_minutes": 15,
+      "difficulty": "fácil",
+      "servings": 4,
+      "tags": ["vegano", "sin-coccion", "temporada", "verano", "batch", "sin-gluten"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["verano"],
+      "cooking_device": "sin_coccion",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "tomates-maduros", "name": "Tomates maduros", "quantity": 1, "unit": "kg", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "pepino", "name": "Pepino", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "pimiento-verde", "name": "Pimiento verde italiano", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "ajo", "name": "Diente de ajo", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": true, "optional": false },
+        { "id": "pan-gazpacho", "name": "Pan del día anterior", "quantity": 50, "unit": "g", "category": "despensa", "supermarket_section": "Panadería", "pantry_item": true, "optional": true },
+        { "id": "vinagre", "name": "Vinagre de jerez", "quantity": 2, "unit": "cucharadas", "category": "despensa", "supermarket_section": "Aceites y vinagres", "pantry_item": true, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Trocear todos los vegetales y el pan. Triturar en batidora hasta obtener crema fina.", "duration_minutes": 5, "tip": "Pelar los tomates facilita el resultado" },
+        { "order": 2, "text": "Añadir AOVE, vinagre y sal. Volver a triturar 1 minuto.", "duration_minutes": 1, "tip": null },
+        { "order": 3, "text": "Colar si se desea textura muy fina. Refrigerar mínimo 2 horas.", "duration_minutes": 1, "tip": "Está mejor de un día para otro" }
+      ],
+      "nutrition": { "calories": 120, "protein": 3, "carbs": 16, "fat": 5 },
+      "batch_compatible": true,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["salmorejo", "ajoblanco"],
+      "category": "verdura",
+      "subcategory": "sopa-fria"
+    },
+    {
+      "id": "garbanzos-espinacas",
+      "name": "Garbanzos con espinacas y huevo poché",
+      "description": "Guiso de garbanzos con espinacas frescas y un huevo poché encima. Completo y reconfortante.",
+      "image": "assets/images/recipes/garbanzos-espinacas.jpg",
+      "image_optional": true,
+      "time_minutes": 20,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["legumbre", "vegetariano", "rapido", "sin-gluten"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano", "otono", "invierno"],
+      "cooking_device": "vitroceramica",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "garbanzos-bote", "name": "Garbanzos cocidos (bote)", "quantity": 400, "unit": "g", "category": "despensa", "supermarket_section": "Legumbres", "pantry_item": true, "optional": false },
+        { "id": "espinacas", "name": "Espinacas frescas", "quantity": 150, "unit": "g", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "huevos", "name": "Huevos", "quantity": 2, "unit": "unidades", "category": "frescos", "supermarket_section": "Huevos y lácteos", "pantry_item": true, "optional": false },
+        { "id": "tomate-triturado", "name": "Tomate triturado", "quantity": 150, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": true, "optional": false },
+        { "id": "curcuma", "name": "Cúrcuma", "quantity": 0.5, "unit": "cucharadita", "category": "despensa", "supermarket_section": "Especias", "pantry_item": true, "optional": true }
+      ],
+      "steps": [
+        { "order": 1, "text": "Calentar AOVE en sartén, añadir tomate triturado y especias. Sofreír 5 min.", "duration_minutes": 5, "tip": null },
+        { "order": 2, "text": "Añadir los garbanzos escurridos y las espinacas. Cocinar 5 min.", "duration_minutes": 5, "tip": null },
+        { "order": 3, "text": "Hacer los huevos poché: agua hirviendo con vinagre, cascar el huevo en un bol y verter con cuidado.", "duration_minutes": 3, "tip": "El vinagre ayuda a que la clara no se disperse" },
+        { "order": 4, "text": "Servir los garbanzos con el huevo poché encima.", "duration_minutes": 1, "tip": null }
+      ],
+      "nutrition": { "calories": 380, "protein": 22, "carbs": 42, "fat": 14 },
+      "batch_compatible": true,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["guiso-lentejas-mediterraneo", "alubias-verduras"],
+      "category": "legumbre",
+      "subcategory": "garbanzos"
+    },
+    {
+      "id": "tortilla-patata-clasica",
+      "name": "Tortilla de patata clásica",
+      "description": "La tortilla española de siempre: patata, huevo, cebolla opcional y el punto justo de sal.",
+      "image": "assets/images/recipes/tortilla-patata.jpg",
+      "image_optional": true,
+      "time_minutes": 30,
+      "difficulty": "medio",
+      "servings": 4,
+      "tags": ["cena-simple", "clasica", "vegetariano", "economico"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano", "otono", "invierno"],
+      "cooking_device": "vitroceramica",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "patatas", "name": "Patatas", "quantity": 500, "unit": "g", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "huevos", "name": "Huevos", "quantity": 5, "unit": "unidades", "category": "frescos", "supermarket_section": "Huevos y lácteos", "pantry_item": true, "optional": false },
+        { "id": "cebolla", "name": "Cebolla", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": true },
+        { "id": "aceite-girasol", "name": "Aceite de girasol", "quantity": 200, "unit": "ml", "category": "despensa", "supermarket_section": "Aceites", "pantry_item": true, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Pelar y laminar las patatas finas. Freír en abundante aceite a fuego medio-bajo 15 min.", "duration_minutes": 15, "tip": "La patata debe confitarse, no freírse fuerte" },
+        { "order": 2, "text": "Batir los huevos con sal. Escurrir las patatas y mezclar con los huevos. Reposar 5 min.", "duration_minutes": 5, "tip": null },
+        { "order": 3, "text": "Cuajar en sartén antiadherente con poco aceite a fuego medio.", "duration_minutes": 4, "tip": null },
+        { "order": 4, "text": "Dar la vuelta con un plato y cuajar el otro lado 2-3 min.", "duration_minutes": 3, "tip": "Mejor dejarla ligeramente jugosa por dentro" }
+      ],
+      "nutrition": { "calories": 290, "protein": 12, "carbs": 28, "fat": 16 },
+      "batch_compatible": false,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["revuelto-verduras", "frittata-verduras"],
+      "category": "huevo",
+      "subcategory": "tortilla"
+    },
+    {
+      "id": "salmon-verduras-airfryer",
+      "name": "Salmón mediterráneo con verduras asadas",
+      "description": "Lomo de salmón crujiente al airfryer sobre cama de verduras mediterráneas. Listo en 15 minutos.",
+      "image": "assets/images/recipes/salmon-verduras.jpg",
+      "image_optional": true,
+      "time_minutes": 20,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["airfryer", "pescado", "rapido", "sin-gluten", "temporada"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano"],
+      "cooking_device": "airfryer",
+      "airfryer_temp": 190,
+      "airfryer_time": 12,
+      "airfryer_tip": "No mover el salmón durante la cocción. La piel queda crujiente.",
+      "ingredients": [
+        { "id": "salmon-lomos", "name": "Lomos de salmón", "quantity": 2, "unit": "unidades", "category": "frescos", "supermarket_section": "Pescadería", "pantry_item": false, "optional": false },
+        { "id": "pimiento-rojo", "name": "Pimiento rojo", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "calabacin", "name": "Calabacín", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "cebolla-morada", "name": "Cebolla morada", "quantity": 0.5, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "limon", "name": "Limón", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Precalentar airfryer a 190°C. Cortar verduras en tiras finas y mezclar con AOVE.", "duration_minutes": 5, "tip": null },
+        { "order": 2, "text": "Cocinar verduras en airfryer 8 minutos, removiendo a la mitad.", "duration_minutes": 8, "tip": null },
+        { "order": 3, "text": "Añadir el salmón (piel abajo) sobre las verduras. Cocinar 12 min más.", "duration_minutes": 12, "tip": "No mover el salmón para que la piel quede crujiente" },
+        { "order": 4, "text": "Exprimir limón por encima y servir.", "duration_minutes": 1, "tip": null }
+      ],
+      "nutrition": { "calories": 420, "protein": 36, "carbs": 12, "fat": 26 },
+      "batch_compatible": false,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["merluza-verduras-horno", "dorada-sal"],
+      "category": "pescado",
+      "subcategory": "salmon"
+    },
+    {
+      "id": "pizza-casera-masa-madre",
+      "name": "Pizza casera de masa madre",
+      "description": "Pizza artesanal con masa madre, tomate San Marzano, mozzarella fresca y albahaca. La comida especial de la semana.",
+      "image": "assets/images/recipes/pizza-masa-madre.jpg",
+      "image_optional": true,
+      "time_minutes": 45,
+      "difficulty": "medio",
+      "servings": 2,
+      "tags": ["especial", "pizza", "semanal", "horno", "vegetariano"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano", "otono", "invierno"],
+      "cooking_device": "horno",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "masa-pizza", "name": "Masa de pizza (fresca o precocinada)", "quantity": 2, "unit": "bolas", "category": "frescos", "supermarket_section": "Panadería y masas", "pantry_item": false, "optional": false },
+        { "id": "tomate-san-marzano", "name": "Tomate San Marzano triturado", "quantity": 200, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": false, "optional": false },
+        { "id": "mozzarella-fresca", "name": "Mozzarella fresca", "quantity": 250, "unit": "g", "category": "lacteos", "supermarket_section": "Lácteos", "pantry_item": false, "optional": false },
+        { "id": "albahaca-fresca", "name": "Albahaca fresca", "quantity": 1, "unit": "manojo", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "oregano", "name": "Orégano", "quantity": 1, "unit": "cucharadita", "category": "despensa", "supermarket_section": "Especias", "pantry_item": true, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Precalentar horno a 250°C (máxima potencia) con bandeja dentro.", "duration_minutes": 15, "tip": "Cuanto más caliente, mejor la base" },
+        { "order": 2, "text": "Estirar la masa fina sobre papel de hornear.", "duration_minutes": 5, "tip": null },
+        { "order": 3, "text": "Extender el tomate con sal, AOVE y orégano.", "duration_minutes": 2, "tip": null },
+        { "order": 4, "text": "Añadir la mozzarella rasgada con las manos.", "duration_minutes": 2, "tip": null },
+        { "order": 5, "text": "Hornear 10-12 min hasta que los bordes estén dorados.", "duration_minutes": 12, "tip": null },
+        { "order": 6, "text": "Añadir albahaca fresca al sacar del horno.", "duration_minutes": 1, "tip": "La albahaca nunca va al horno" }
+      ],
+      "nutrition": { "calories": 620, "protein": 26, "carbs": 72, "fat": 24 },
+      "batch_compatible": false,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["focaccia", "flatbread-tomate"],
+      "category": "especial",
+      "subcategory": "pizza"
+    },
+    {
+      "id": "ensalada-garbanzos-feta",
+      "name": "Ensalada de garbanzos con feta y tomates secos",
+      "description": "Ensalada mediterránea fresca y saciante. Perfecta para el verano, se prepara en 10 minutos.",
+      "image": "assets/images/recipes/ensalada-garbanzos-feta.jpg",
+      "image_optional": true,
+      "time_minutes": 10,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["sin-coccion", "vegetariano", "rapido", "temporada", "verano"],
+      "meal_type": ["lunch", "dinner"],
+      "season": ["primavera", "verano"],
+      "cooking_device": "sin_coccion",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "garbanzos-bote", "name": "Garbanzos cocidos (bote)", "quantity": 400, "unit": "g", "category": "despensa", "supermarket_section": "Legumbres", "pantry_item": true, "optional": false },
+        { "id": "queso-feta", "name": "Queso feta", "quantity": 100, "unit": "g", "category": "lacteos", "supermarket_section": "Lácteos", "pantry_item": false, "optional": false },
+        { "id": "tomates-cherry", "name": "Tomates cherry", "quantity": 200, "unit": "g", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "pepino", "name": "Pepino", "quantity": 1, "unit": "unidad", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "aceitunas-negras", "name": "Aceitunas negras", "quantity": 80, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": true, "optional": false },
+        { "id": "tomates-secos", "name": "Tomates secos en aceite", "quantity": 50, "unit": "g", "category": "despensa", "supermarket_section": "Conservas", "pantry_item": true, "optional": true }
+      ],
+      "steps": [
+        { "order": 1, "text": "Escurrir y aclarar los garbanzos. Cortar los vegetales.", "duration_minutes": 3, "tip": null },
+        { "order": 2, "text": "Mezclar todo en un bol grande. Añadir AOVE, vinagre y sal.", "duration_minutes": 2, "tip": null },
+        { "order": 3, "text": "Desmenuzar el feta por encima. Servir o refrigerar.", "duration_minutes": 1, "tip": "Mejor si reposa 15 min en la nevera" }
+      ],
+      "nutrition": { "calories": 340, "protein": 18, "carbs": 38, "fat": 14 },
+      "batch_compatible": true,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["ensalada-mediterranea", "tabbouleh"],
+      "category": "legumbre",
+      "subcategory": "ensalada"
+    },
+    {
+      "id": "pan-tomate-jamon",
+      "name": "Pan con tomate y jamón ibérico",
+      "description": "La cena sencilla perfecta. Pan tostado con tomate rallado, AOVE y jamón ibérico.",
+      "image": "assets/images/recipes/pan-tomate-jamon.jpg",
+      "image_optional": true,
+      "time_minutes": 5,
+      "difficulty": "fácil",
+      "servings": 2,
+      "tags": ["cena-simple", "rapido", "sin-coccion", "clasica"],
+      "meal_type": ["dinner"],
+      "season": ["primavera", "verano", "otono", "invierno"],
+      "cooking_device": "sin_coccion",
+      "airfryer_temp": null,
+      "airfryer_time": null,
+      "airfryer_tip": null,
+      "ingredients": [
+        { "id": "pan-barra", "name": "Barra de pan (del día)", "quantity": 0.5, "unit": "barra", "category": "frescos", "supermarket_section": "Panadería", "pantry_item": false, "optional": false },
+        { "id": "tomate-rallado", "name": "Tomates maduros para rallar", "quantity": 2, "unit": "unidades", "category": "frescos", "supermarket_section": "Frutas y verduras", "pantry_item": false, "optional": false },
+        { "id": "jamon-iberico", "name": "Jamón ibérico o serrano", "quantity": 100, "unit": "g", "category": "frescos", "supermarket_section": "Charcutería", "pantry_item": false, "optional": false }
+      ],
+      "steps": [
+        { "order": 1, "text": "Tostar el pan ligeramente. Frotar con ajo si se desea.", "duration_minutes": 2, "tip": null },
+        { "order": 2, "text": "Rallar el tomate y extender sobre el pan con AOVE y sal.", "duration_minutes": 2, "tip": "El tomate debe estar muy maduro" },
+        { "order": 3, "text": "Colocar el jamón encima y servir.", "duration_minutes": 1, "tip": null }
+      ],
+      "nutrition": { "calories": 220, "protein": 14, "carbs": 24, "fat": 8 },
+      "batch_compatible": false,
+      "freezable": false,
+      "freezer_duration_weeks": 0,
+      "similar_recipes": ["bocadillo-jamon", "tostadas-aguacate"],
+      "category": "cena-simple",
+      "subcategory": "pan"
+    }
+  ],
+
+  "menu": {
+    "id": "2025-Q12B",
+    "days": [
+      {
+        "date": "2025-06-16",
+        "day_of_week": "lunes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Avena con frutas y nueces" },
+        "lunch": { "recipe_id": "guiso-lentejas-mediterraneo", "recipe_name": "Guiso de lentejas mediterráneo", "image": "assets/images/recipes/guiso-lentejas.jpg", "is_featured": true, "special_type": null },
+        "dinner": { "recipe_id": "pan-tomate-jamon", "recipe_name": "Pan con tomate y jamón", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-17",
+        "day_of_week": "martes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con tomate y AOVE" },
+        "lunch": { "recipe_id": "pollo-limon-patatas", "recipe_name": "Pollo al limón con patatas y aceitunas", "image": "assets/images/recipes/pollo-limon-patatas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "gazpacho-andaluz", "recipe_name": "Gazpacho andaluz", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-18",
+        "day_of_week": "miércoles",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Yogur griego con miel y granola" },
+        "lunch": { "recipe_id": "merluza-verduras-horno", "recipe_name": "Merluza al horno con verduras", "image": "assets/images/recipes/merluza-verduras.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "tortilla-patata-clasica", "recipe_name": "Tortilla de patata clásica", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-19",
+        "day_of_week": "jueves",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con aguacate y huevo" },
+        "lunch": { "recipe_id": "garbanzos-espinacas", "recipe_name": "Garbanzos con espinacas y huevo poché", "image": "assets/images/recipes/garbanzos-espinacas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "gazpacho-andaluz", "recipe_name": "Gazpacho andaluz", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-20",
+        "day_of_week": "viernes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Avena con plátano y canela" },
+        "lunch": { "recipe_id": "salmon-verduras-airfryer", "recipe_name": "Salmón mediterráneo con verduras asadas", "image": "assets/images/recipes/salmon-verduras.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "ensalada-garbanzos-feta", "recipe_name": "Ensalada de garbanzos con feta", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-21",
+        "day_of_week": "sábado",
+        "is_special": true,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con tomate, jamón y café" },
+        "lunch": { "recipe_id": "pizza-casera-masa-madre", "recipe_name": "Pizza casera de masa madre", "image": "assets/images/recipes/pizza-masa-madre.jpg", "is_featured": true, "special_type": "pizza" },
+        "dinner": { "recipe_id": "pan-tomate-jamon", "recipe_name": "Pan con tomate y jamón", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-22",
+        "day_of_week": "domingo",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Yogur griego con frutas del bosque" },
+        "lunch": { "recipe_id": "pollo-limon-patatas", "recipe_name": "Pollo al limón con patatas y aceitunas", "image": "assets/images/recipes/pollo-limon-patatas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "gazpacho-andaluz", "recipe_name": "Gazpacho andaluz", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-23",
+        "day_of_week": "lunes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con tomate y AOVE" },
+        "lunch": { "recipe_id": "guiso-lentejas-mediterraneo", "recipe_name": "Guiso de lentejas mediterráneo", "image": "assets/images/recipes/guiso-lentejas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "tortilla-patata-clasica", "recipe_name": "Tortilla de patata clásica", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-24",
+        "day_of_week": "martes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Avena con manzana y canela" },
+        "lunch": { "recipe_id": "merluza-verduras-horno", "recipe_name": "Merluza al horno con verduras", "image": "assets/images/recipes/merluza-verduras.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "ensalada-garbanzos-feta", "recipe_name": "Ensalada de garbanzos con feta", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-25",
+        "day_of_week": "miércoles",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Yogur griego con nueces y miel" },
+        "lunch": { "recipe_id": "garbanzos-espinacas", "recipe_name": "Garbanzos con espinacas y huevo poché", "image": "assets/images/recipes/garbanzos-espinacas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "pan-tomate-jamon", "recipe_name": "Pan con tomate y jamón", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-26",
+        "day_of_week": "jueves",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con aguacate" },
+        "lunch": { "recipe_id": "salmon-verduras-airfryer", "recipe_name": "Salmón mediterráneo con verduras asadas", "image": "assets/images/recipes/salmon-verduras.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "gazpacho-andaluz", "recipe_name": "Gazpacho andaluz", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-27",
+        "day_of_week": "viernes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Avena con frutas y semillas" },
+        "lunch": { "recipe_id": "pollo-limon-patatas", "recipe_name": "Pollo al limón con patatas y aceitunas", "image": "assets/images/recipes/pollo-limon-patatas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "tortilla-patata-clasica", "recipe_name": "Tortilla de patata clásica", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-28",
+        "day_of_week": "sábado",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con jamón y tomate" },
+        "lunch": { "recipe_id": "guiso-lentejas-mediterraneo", "recipe_name": "Guiso de lentejas mediterráneo", "image": "assets/images/recipes/guiso-lentejas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "ensalada-garbanzos-feta", "recipe_name": "Ensalada de garbanzos con feta", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-29",
+        "day_of_week": "domingo",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Yogur griego con granola" },
+        "lunch": { "recipe_id": "merluza-verduras-horno", "recipe_name": "Merluza al horno con verduras", "image": "assets/images/recipes/merluza-verduras.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "pan-tomate-jamon", "recipe_name": "Pan con tomate y jamón", "is_simple": false, "simple_description": null }
+      },
+      {
+        "date": "2025-06-30",
+        "day_of_week": "lunes",
+        "is_special": false,
+        "breakfast": { "recipe_id": null, "recipe_name": null, "is_simple": true, "simple_description": "Tostadas con tomate y AOVE" },
+        "lunch": { "recipe_id": "garbanzos-espinacas", "recipe_name": "Garbanzos con espinacas y huevo poché", "image": "assets/images/recipes/garbanzos-espinacas.jpg", "is_featured": false, "special_type": null },
+        "dinner": { "recipe_id": "gazpacho-andaluz", "recipe_name": "Gazpacho andaluz", "is_simple": false, "simple_description": null }
+      }
+    ]
+  },
+
+  "batchCooking": {
+    "date": "2025-06-21",
+    "estimated_total_minutes": 150,
+    "tasks": [
+      {
+        "id": "batch-001",
+        "recipe_id": "guiso-lentejas-mediterraneo",
+        "recipe_name": "Guiso de lentejas mediterráneo",
+        "order": 1,
+        "duration_minutes": 45,
+        "result_portions": 8,
+        "result_unit": "raciones",
+        "freeze_result": true,
+        "notes": "Preparar el doble de cantidad. Dividir en recipientes de 2 raciones para congelar."
+      },
+      {
+        "id": "batch-002",
+        "recipe_id": "gazpacho-andaluz",
+        "recipe_name": "Gazpacho andaluz (litro y medio)",
+        "order": 2,
+        "duration_minutes": 20,
+        "result_portions": 6,
+        "result_unit": "raciones",
+        "freeze_result": false,
+        "notes": "Guardar en jarra en nevera. Aguanta 4-5 días. No congelar."
+      },
+      {
+        "id": "batch-003",
+        "recipe_id": "pollo-limon-patatas",
+        "recipe_name": "Pollo al limón (preparación base)",
+        "order": 3,
+        "duration_minutes": 40,
+        "result_portions": 4,
+        "result_unit": "raciones",
+        "freeze_result": false,
+        "notes": "Marinar el pollo hoy para el lunes. Guardar en nevera marinando."
+      }
+    ],
+    "shopping_additions": []
+  },
+
+  "shoppingList": {
+    "generated_from_menu_id": "2025-Q12B",
+    "sections": [
+      {
+        "id": "frescos",
+        "name": "Frescos",
+        "supermarket_order": 1,
+        "icon": "🥬",
+        "items": [
+          { "id": "sl-001", "ingredient_id": "muslos-pollo", "name": "Muslos de pollo", "quantity": 12, "unit": "unidades", "recipe_ids": ["pollo-limon-patatas"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-002", "ingredient_id": "salmon-lomos", "name": "Lomos de salmón", "quantity": 4, "unit": "unidades", "recipe_ids": ["salmon-verduras-airfryer"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-003", "ingredient_id": "merluza-lomos", "name": "Lomos de merluza", "quantity": 800, "unit": "g", "recipe_ids": ["merluza-verduras-horno"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-004", "ingredient_id": "espinacas", "name": "Espinacas frescas", "quantity": 700, "unit": "g", "recipe_ids": ["guiso-lentejas-mediterraneo", "garbanzos-espinacas"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-005", "ingredient_id": "tomates-maduros", "name": "Tomates maduros", "quantity": 3, "unit": "kg", "recipe_ids": ["gazpacho-andaluz", "pan-tomate-jamon"], "image": null, "is_water": false, "is_heavy": true, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-006", "ingredient_id": "tomates-cherry", "name": "Tomates cherry", "quantity": 600, "unit": "g", "recipe_ids": ["merluza-verduras-horno", "ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-007", "ingredient_id": "patatas", "name": "Patatas", "quantity": 2, "unit": "kg", "recipe_ids": ["pollo-limon-patatas", "tortilla-patata-clasica"], "image": null, "is_water": false, "is_heavy": true, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-008", "ingredient_id": "calabacin", "name": "Calabacín", "quantity": 4, "unit": "unidades", "recipe_ids": ["merluza-verduras-horno", "salmon-verduras-airfryer"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-009", "ingredient_id": "pimiento-rojo", "name": "Pimiento rojo", "quantity": 4, "unit": "unidades", "recipe_ids": ["merluza-verduras-horno", "salmon-verduras-airfryer"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-010", "ingredient_id": "pepino", "name": "Pepino", "quantity": 3, "unit": "unidades", "recipe_ids": ["gazpacho-andaluz", "ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-011", "ingredient_id": "limon", "name": "Limones", "quantity": 8, "unit": "unidades", "recipe_ids": ["pollo-limon-patatas", "merluza-verduras-horno", "salmon-verduras-airfryer"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-012", "ingredient_id": "zanahoria", "name": "Zanahorias", "quantity": 4, "unit": "unidades", "recipe_ids": ["guiso-lentejas-mediterraneo"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-013", "ingredient_id": "cebolla", "name": "Cebollas", "quantity": 4, "unit": "unidades", "recipe_ids": ["guiso-lentejas-mediterraneo", "tortilla-patata-clasica"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-014", "ingredient_id": "huevos", "name": "Huevos (docena)", "quantity": 1, "unit": "docena", "recipe_ids": ["garbanzos-espinacas", "tortilla-patata-clasica"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "huevos" },
+          { "id": "sl-015", "ingredient_id": "pan-barra", "name": "Pan (varias barras)", "quantity": 4, "unit": "barras", "recipe_ids": ["pan-tomate-jamon"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-016", "ingredient_id": "albahaca-fresca", "name": "Albahaca fresca", "quantity": 2, "unit": "manojos", "recipe_ids": ["pizza-casera-masa-madre"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-017", "ingredient_id": "jamon-iberico", "name": "Jamón ibérico / serrano", "quantity": 300, "unit": "g", "recipe_ids": ["pan-tomate-jamon"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-018", "ingredient_id": "romero", "name": "Romero fresco", "quantity": 1, "unit": "manojo", "recipe_ids": ["pollo-limon-patatas"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null }
+        ]
+      },
+      {
+        "id": "lacteos",
+        "name": "Lácteos",
+        "supermarket_order": 2,
+        "icon": "🧀",
+        "items": [
+          { "id": "sl-019", "ingredient_id": "mozzarella-fresca", "name": "Mozzarella fresca", "quantity": 500, "unit": "g", "recipe_ids": ["pizza-casera-masa-madre"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-020", "ingredient_id": "queso-feta", "name": "Queso feta", "quantity": 200, "unit": "g", "recipe_ids": ["ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null }
+        ]
+      },
+      {
+        "id": "panaderia",
+        "name": "Panadería y masas",
+        "supermarket_order": 3,
+        "icon": "🍞",
+        "items": [
+          { "id": "sl-021", "ingredient_id": "masa-pizza", "name": "Masa de pizza fresca", "quantity": 2, "unit": "bolas", "recipe_ids": ["pizza-casera-masa-madre"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null }
+        ]
+      },
+      {
+        "id": "despensa",
+        "name": "Despensa",
+        "supermarket_order": 4,
+        "icon": "🫙",
+        "items": [
+          { "id": "sl-022", "ingredient_id": "lentejas-pardinas", "name": "Lentejas pardinas", "quantity": 800, "unit": "g", "recipe_ids": ["guiso-lentejas-mediterraneo"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "lentejas-pardinas" },
+          { "id": "sl-023", "ingredient_id": "garbanzos-bote", "name": "Garbanzos cocidos (botes)", "quantity": 4, "unit": "botes", "recipe_ids": ["garbanzos-espinacas", "ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "garbanzos-bote" },
+          { "id": "sl-024", "ingredient_id": "tomate-triturado", "name": "Tomate triturado (botes)", "quantity": 3, "unit": "botes", "recipe_ids": ["guiso-lentejas-mediterraneo", "garbanzos-espinacas"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "tomate-triturado" },
+          { "id": "sl-025", "ingredient_id": "tomate-san-marzano", "name": "Tomate San Marzano triturado", "quantity": 2, "unit": "botes", "recipe_ids": ["pizza-casera-masa-madre"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": false, "pantry_ingredient_id": null },
+          { "id": "sl-026", "ingredient_id": "aceitunas-negras", "name": "Aceitunas negras", "quantity": 2, "unit": "botes", "recipe_ids": ["pollo-limon-patatas", "ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "aceitunas-negras" },
+          { "id": "sl-027", "ingredient_id": "tomates-secos", "name": "Tomates secos en aceite", "quantity": 1, "unit": "bote", "recipe_ids": ["ensalada-garbanzos-feta"], "image": null, "is_water": false, "is_heavy": false, "pantry_check": true, "pantry_ingredient_id": "tomates-secos" }
+        ]
+      },
+      {
+        "id": "agua",
+        "name": "Agua",
+        "supermarket_order": 5,
+        "icon": "💧",
+        "items": [
+          { "id": "sl-water", "ingredient_id": "garrafas-agua", "name": "Garrafas de agua 5L", "quantity": 14, "unit": "garrafas", "recipe_ids": [], "image": null, "is_water": true, "is_heavy": true, "pantry_check": false, "pantry_ingredient_id": null }
+        ]
+      }
+    ]
+  }
+}

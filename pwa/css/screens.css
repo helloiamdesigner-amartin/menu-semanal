@@ -1,0 +1,561 @@
+/* =========================================================
+   CASITA — Screens CSS
+   Estilos específicos de cada pantalla
+   ========================================================= */
+
+/* ── INICIO (home) ─────────────────────────────────────────── */
+#screen-home .app-logo {
+  position: absolute;
+  top: 16px;
+  left: var(--sp-lg);
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+  color: var(--c-primary);
+  letter-spacing: -0.5px;
+  z-index: 10;
+}
+
+#screen-home .hero-photo {
+  height: 260px;
+}
+
+#screen-home .greeting-section {
+  padding: var(--sp-lg) var(--sp-lg) var(--sp-sm);
+}
+
+#screen-home .greeting-name {
+  font-size: var(--text-h2);
+  font-weight: var(--fw-bold);
+  color: var(--c-text-primary);
+}
+
+#screen-home .greeting-date {
+  font-size: var(--text-body-sm);
+  color: var(--c-text-muted);
+  margin-top: 2px;
+}
+
+/* Card HOY */
+#screen-home .today-card {
+  margin: 0 var(--sp-lg);
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+#screen-home .today-card-header {
+  padding: var(--sp-md) var(--sp-md) var(--sp-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-border);
+}
+
+#screen-home .today-card-meals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+#screen-home .today-meal-col {
+  padding: var(--sp-md) var(--sp-sm);
+  text-align: center;
+  border-right: 1px solid var(--c-border);
+  cursor: pointer;
+  transition: background var(--t-fast);
+}
+
+#screen-home .today-meal-col:last-child { border-right: none; }
+#screen-home .today-meal-col:active { background: var(--c-surface); }
+
+#screen-home .today-meal-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 6px;
+  font-size: 16px;
+}
+
+#screen-home .today-meal-icon.breakfast { background: #FFF3E0; }
+#screen-home .today-meal-icon.lunch     { background: var(--c-primary-ghost); }
+#screen-home .today-meal-icon.dinner    { background: #EDE7F6; }
+
+#screen-home .today-meal-type {
+  font-size: 9px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: 4px;
+}
+
+#screen-home .today-meal-name {
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text-primary);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card AGUA */
+#screen-home .water-card {
+  margin: var(--sp-md) var(--sp-lg) 0;
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-md);
+}
+
+#screen-home .water-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#screen-home .water-card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-body-sm);
+  font-weight: var(--fw-semi);
+  color: var(--c-water-dark);
+}
+
+#screen-home .water-card-amount {
+  font-size: var(--text-body-sm);
+  font-weight: var(--fw-bold);
+  color: var(--c-water);
+}
+
+/* Grid 2x2 stats */
+#screen-home .stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-md);
+  margin: var(--sp-md) var(--sp-lg) 0;
+}
+
+/* Card especial semanal */
+#screen-home .special-card {
+  margin: var(--sp-md) var(--sp-lg) 0;
+  background: var(--c-secondary);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  min-height: 120px;
+  cursor: pointer;
+  transition: transform var(--t-fast);
+}
+
+#screen-home .special-card:active { transform: scale(0.98); }
+
+#screen-home .special-card-photo {
+  width: 130px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+#screen-home .special-card-body {
+  padding: var(--sp-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+#screen-home .special-card-eyebrow {
+  font-size: 9px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--c-secondary-mid);
+}
+
+#screen-home .special-card-title {
+  font-size: 17px;
+  font-weight: var(--fw-bold);
+  color: white;
+  line-height: 1.2;
+}
+
+#screen-home .special-card-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+  margin-top: 2px;
+}
+
+#screen-home .special-card-btn {
+  margin-top: 10px;
+  background: white;
+  color: var(--c-secondary);
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: var(--fw-semi);
+  cursor: pointer;
+  font-family: var(--font-system);
+  align-self: flex-start;
+  transition: opacity var(--t-fast);
+}
+
+/* ── PLAN (menu) ───────────────────────────────────────────── */
+#screen-plan .plan-header {
+  padding: 56px var(--sp-lg) var(--sp-md);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#screen-plan .quincenal-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--c-white);
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--r-pill);
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: var(--fw-semi);
+  color: var(--c-text-primary);
+  cursor: pointer;
+  font-family: var(--font-system);
+  -webkit-appearance: none;
+}
+
+#screen-plan .calendar-wrap {
+  padding: var(--sp-sm) 0 var(--sp-md);
+  border-bottom: 1px solid var(--c-border);
+}
+
+#screen-plan .calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--sp-md);
+  margin-bottom: var(--sp-sm);
+}
+
+#screen-plan .calendar-nav-btn {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-text-muted);
+  border-radius: 50%;
+  transition: background var(--t-fast);
+}
+
+#screen-plan .calendar-nav-btn:active { background: var(--c-surface); }
+
+#screen-plan .day-hero {
+  margin: 0 var(--sp-lg);
+}
+
+#screen-plan .day-hero .hero-photo {
+  height: 200px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+#screen-plan .day-meals-card {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin: var(--sp-md) var(--sp-lg) 0;
+}
+
+#screen-plan .batch-teaser {
+  background: var(--c-primary-pale);
+  border: 1px solid var(--c-primary-mid);
+  border-radius: var(--r-lg);
+  padding: var(--sp-md);
+  margin: var(--sp-md) var(--sp-lg) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  cursor: pointer;
+  transition: opacity var(--t-fast);
+}
+
+#screen-plan .batch-teaser:active { opacity: 0.8; }
+
+/* ── SHOPPING (compra) ─────────────────────────────────────── */
+#screen-shopping .shopping-header {
+  padding: 52px var(--sp-lg) var(--sp-sm);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#screen-shopping .mercadona-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text-muted);
+  cursor: pointer;
+}
+
+#screen-shopping .shopping-progress-wrap {
+  padding: 0 var(--sp-lg) var(--sp-md);
+}
+
+#screen-shopping .shopping-count {
+  font-size: var(--text-body-sm);
+  color: var(--c-text-muted);
+  margin-bottom: 8px;
+}
+
+#screen-shopping .shopping-count strong {
+  color: var(--c-primary);
+  font-weight: var(--fw-semi);
+}
+
+#screen-shopping .shopping-actions {
+  padding: var(--sp-md) var(--sp-lg);
+  display: flex;
+  gap: var(--sp-sm);
+}
+
+/* ── RECIPES ───────────────────────────────────────────────── */
+#screen-recipes .recipes-search {
+  padding: 0 var(--sp-lg) var(--sp-sm);
+  position: relative;
+}
+
+#screen-recipes .search-input-wrap {
+  position: relative;
+}
+
+#screen-recipes .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--c-text-muted);
+  pointer-events: none;
+}
+
+#screen-recipes .search-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+}
+
+#screen-recipes input[type="search"] {
+  padding-left: 42px;
+}
+
+#screen-recipes .chips-row { padding-bottom: var(--sp-md); }
+
+/* ── HOGAR ─────────────────────────────────────────────────── */
+#screen-hogar .hogar-tabs {
+  display: flex;
+  background: var(--c-surface);
+  border-radius: var(--r-pill);
+  padding: 3px;
+  margin: 0 var(--sp-lg) var(--sp-md);
+}
+
+#screen-hogar .hogar-tab {
+  flex: 1;
+  height: 34px;
+  border: none;
+  border-radius: var(--r-pill);
+  background: none;
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text-muted);
+  cursor: pointer;
+  font-family: var(--font-system);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all var(--t-fast);
+  -webkit-appearance: none;
+}
+
+#screen-hogar .hogar-tab.active {
+  background: var(--c-white);
+  color: var(--c-text-primary);
+  font-weight: var(--fw-semi);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#screen-hogar .hogar-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-md);
+  margin: 0 var(--sp-lg) var(--sp-lg);
+}
+
+#screen-hogar .hogar-stat {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-md);
+  text-align: center;
+  cursor: pointer;
+  transition: transform var(--t-fast);
+}
+
+#screen-hogar .hogar-stat:active { transform: scale(0.97); }
+
+#screen-hogar .hogar-stat-icon {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+#screen-hogar .hogar-stat-number {
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+  color: var(--c-text-primary);
+  line-height: 1;
+}
+
+#screen-hogar .hogar-stat-label {
+  font-size: 11px;
+  color: var(--c-text-muted);
+  margin-top: 2px;
+}
+
+#screen-hogar .hogar-tab-content {
+  display: none;
+}
+
+#screen-hogar .hogar-tab-content.active {
+  display: block;
+  animation: slideUp 200ms ease-out forwards;
+}
+
+/* Water section en Hogar */
+#screen-hogar .water-section {
+  margin: 0 var(--sp-lg);
+  background: var(--c-info-pale);
+  border: 1px solid rgba(59,127,196,0.25);
+  border-radius: var(--r-lg);
+  padding: var(--sp-md);
+}
+
+#screen-hogar .water-quincenal-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+#screen-hogar .water-big-number {
+  font-size: 28px;
+  font-weight: var(--fw-bold);
+  color: var(--c-water-dark);
+}
+
+#screen-hogar .water-goal {
+  font-size: var(--text-body-sm);
+  color: var(--c-water);
+}
+
+#screen-hogar .water-photo {
+  width: 64px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+}
+
+/* ── RECIPE DETAIL SHEET ────────────────────────────────────── */
+#sheet-recipe-detail .recipe-detail-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: var(--c-surface);
+}
+
+#sheet-recipe-detail .recipe-detail-body {
+  padding: var(--sp-lg);
+}
+
+#sheet-recipe-detail .recipe-detail-tabs {
+  display: flex;
+  border-bottom: 1.5px solid var(--c-border);
+  margin-bottom: var(--sp-lg);
+}
+
+#sheet-recipe-detail .recipe-detail-tab {
+  padding: 10px var(--sp-md);
+  font-size: var(--text-body);
+  font-weight: var(--fw-medium);
+  color: var(--c-text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1.5px;
+  transition: all var(--t-fast);
+  border: none;
+  background: none;
+  font-family: var(--font-system);
+}
+
+#sheet-recipe-detail .recipe-detail-tab.active {
+  color: var(--c-primary);
+  border-bottom-color: var(--c-primary);
+}
+
+#sheet-recipe-detail .ingredient-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--c-border);
+}
+
+#sheet-recipe-detail .ingredient-row:last-child { border-bottom: none; }
+
+#sheet-recipe-detail .step-row {
+  display: flex;
+  gap: var(--sp-md);
+  padding: var(--sp-md) 0;
+  border-bottom: 1px solid var(--c-border);
+}
+
+#sheet-recipe-detail .step-number {
+  width: 28px;
+  height: 28px;
+  background: var(--c-primary-pale);
+  color: var(--c-primary-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: var(--fw-bold);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+#sheet-recipe-detail .recipe-detail-actions {
+  position: sticky;
+  bottom: 0;
+  background: var(--c-white);
+  padding: var(--sp-md) var(--sp-lg);
+  padding-bottom: calc(var(--sp-md) + var(--safe-bottom));
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  gap: var(--sp-sm);
+}
