@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Hoja estilizada -->
+  <path d="M18 36 C18 36 8 28 8 20 C8 14 13 10 18 10 C23 10 28 14 28 20 C28 28 18 36 18 36Z" fill="#0E6270"/>
+  <path d="M18 36 C18 36 22 26 22 20 C22 14 20 10 18 10" fill="#085460" opacity="0.4"/>
+  <line x1="18" y1="24" x2="13" y2="20" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="18" y1="28" x2="14" y2="25" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+  <!-- Texto HERBORA -->
+  <text x="38" y="30" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" fill="#0E6270" letter-spacing="1">HERBORA</text>
+</svg>

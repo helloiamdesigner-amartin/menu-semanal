@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Catálogo comercial Herbora — Herramienta para comerciales y clientes profesionales">
+  <meta name="theme-color" content="#0E6270">
+  <meta name="color-scheme" content="light">
+
+  <!-- PWA / iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Herbora">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Herbora Sales App">
+  <meta property="og:description" content="Catálogo comercial Herbora">
+  <meta property="og:type" content="website">
+
+  <title>Herbora Sales App</title>
+
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+
+  <!-- Fuentes: Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- La fuente se carga desde main.css con @import para funcionar offline vía SW -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/screens.css">
+  <link rel="stylesheet" href="./css/animations.css">
+
+  <style>
+    /* Splash screen mientras carga la app */
+    #app-loading {
+      position: fixed;
+      inset: 0;
+      background: #0E6270;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
+    #app-loading.hidden { opacity: 0; pointer-events: none; }
+    #app-loading .logo  { font-size: 36px; font-weight: 700; color: white; font-family: 'Inter', sans-serif; letter-spacing: -1px; }
+    #app-loading .dot-pulse { display: flex; gap: 6px; }
+    #app-loading .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); animation: dotPulse 1.2s ease infinite; }
+    #app-loading .dot:nth-child(2) { animation-delay: 0.2s; }
+    #app-loading .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dotPulse { 0%,80%,100%{opacity:0.3;transform:scale(0.8)} 40%{opacity:1;transform:scale(1)} }
+  </style>
+</head>
+
+<body>
+
+  <!-- Splash de carga -->
+  <div id="app-loading" role="status" aria-live="polite">
+    <div class="logo">herbora</div>
+    <div class="dot-pulse">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!-- App shell -->
+  <div id="app">
+
+    <!-- Banner offline -->
+    <div id="offline-banner" role="alert">📡 Sin conexión — usando catálogo guardado</div>
+
+    <!-- Container de pantallas -->
+    <div id="screen-container">
+
+      <!-- Pantalla de entrada -->
+      <div id="screen-entry" class="screen" role="main"></div>
+
+      <!-- Autenticación comercial -->
+      <div id="screen-auth" class="screen" role="main"></div>
+
+      <!-- Dashboard -->
+      <div id="screen-dashboard" class="screen" role="main"></div>
+
+      <!-- Catálogo -->
+      <div id="screen-catalog" class="screen" role="main"></div>
+
+      <!-- Ficha de producto -->
+      <div id="screen-product" class="screen" role="main"></div>
+
+      <!-- Pedido actual -->
+      <div id="screen-order" class="screen" role="main"></div>
+
+      <!-- Favoritos -->
+      <div id="screen-favorites" class="screen" role="main"></div>
+
+      <!-- Historial -->
+      <div id="screen-history" class="screen" role="main"></div>
+
+      <!-- Comparador -->
+      <div id="screen-compare" class="screen" role="main"></div>
+
+      <!-- Modo presentación -->
+      <div id="screen-presentation" class="screen" role="main"></div>
+
+      <!-- Más / Ajustes -->
+      <div id="screen-more" class="screen" role="main"></div>
+
+    </div><!-- /screen-container -->
+
+    <!-- Navbar inferior (móvil) / superior (tablet) -->
+    <nav id="app-navbar" role="navigation" aria-label="Navegación principal" style="display:none;"></nav>
+
+    <!-- Toast container -->
+    <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  </div><!-- /app -->
+
+  <!-- Bootstrap de la app (ES modules) -->
+  <script type="module" src="./js/app.js"></script>
+
+  <!-- Ocultar splash cuando la app esté lista -->
+  <script>
+    // El splash se oculta cuando el primer router.afterEach se dispara
+    // También con un timeout de seguridad
+    window._hideSplash = function() {
+      const splash = document.getElementById('app-loading');
+      if (splash) {
+        splash.classList.add('hidden');
+        setTimeout(() => splash.remove(), 350);
+      }
+    };
+    // Fallback: ocultar tras 4 segundos si algo falla
+    setTimeout(() => window._hideSplash?.(), 4000);
+  </script>
+
+</body>
+</html>
